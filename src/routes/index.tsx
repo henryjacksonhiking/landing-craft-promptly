@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
+import drSayeediImg from "@/assets/dr-sayeedi.jpg";
 
 const PHONE_HREF = "tel:+15104932130";
 const PHONE_TEXT = "(510) 493-2130";
