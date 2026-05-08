@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import drSayeediImg from "@/assets/dr-sayeedi.jpg";
+import yomiDoctorImg from "@/assets/yomi-doctor.jpg";
+import nobleTeamImg from "@/assets/noble-team.png";
 
 const PHONE_HREF = "tel:+15104932130";
 const PHONE_TEXT = "(510) 493-2130";
@@ -86,7 +88,7 @@ const ArrowIcon = () => (
 );
 const CheckCircleIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.2 14.2l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z" />
   </svg>
 );
 const PinIcon = () => (
