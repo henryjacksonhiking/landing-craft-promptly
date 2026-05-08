@@ -335,7 +335,7 @@ function WhyFremont() {
 
 /* ---------------- IMPLANT OPTIONS ---------------- */
 function ImplantOptions() {
-  const cards: { title: string; icon: JSX.Element }[] = [
+  const cards: { title: string; icon: React.ReactNode }[] = [
     {
       title: "Single Dental Implants",
       icon: (
