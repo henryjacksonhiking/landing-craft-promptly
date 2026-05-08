@@ -455,10 +455,10 @@ function Yomi() {
           <div className="reveal-left">
             <div className="yomi-visual">
               <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Yomi robotic dental implant surgery"
+                src={yomiDoctorImg}
+                alt="Dr. Sayeedi with the Yomi robotic dental implant system"
                 width={600}
-                height={480}
+                height={600}
                 loading="lazy"
               />
               <div className="yomi-tag">
@@ -577,10 +577,10 @@ function Comprehensive() {
         <div className="two-col reverse">
           <div className="reveal-right">
             <img
-              src="https://images.unsplash.com/photo-1588776814546-1ffedee96e2e?w=800&q=80"
-              alt="Noble Dental Care comprehensive dentistry near Fremont"
+              src={nobleTeamImg}
+              alt="Noble Dental Care team in the Union City office"
               width={600}
-              height={500}
+              height={400}
               loading="lazy"
               style={{ borderRadius: 12, boxShadow: "var(--shadow-soft)", width: "100%" }}
             />
