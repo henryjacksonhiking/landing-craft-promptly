@@ -250,8 +250,8 @@
 .advantages-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0 40px; }
 .adv-item { display: flex; align-items: flex-start; gap: 14px; padding: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: var(--radius-md); transition: background var(--transition), border-color var(--transition); }
 .adv-item:hover { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.40); }
-.adv-icon { flex-shrink: 0; width: 40px; height: 40px; background: rgba(201,168,76,0.16); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
-.adv-icon svg { width: 18px; height: 18px; fill: var(--gold); }
+.adv-icon { flex-shrink: 0; width: 44px; height: 44px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.45); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
+.adv-icon svg { width: 22px; height: 22px; fill: var(--gold); }
 .adv-text { font-size: 0.9rem; color: rgba(255,255,255,0.82); line-height: 1.5; font-weight: 500; }
 
 /* Implant options */
@@ -372,25 +372,38 @@
   .two-col { grid-template-columns: 1fr; gap: 48px; }
   .two-col.reverse { direction: ltr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .hero-content { max-width: 100%; }
+  .hero-badges { margin-top: 28px; }
+  .implant-options-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
-  .section { padding: 64px 0; }
-  .hero-video-card { min-height: 280px; }
-  .hero-play { width: 66px; height: 66px; }
+  .container { padding: 0 18px; }
+  .section { padding: 56px 0; }
+  .hero-video-card { min-height: 260px; }
+  .hero-play { width: 60px; height: 60px; }
   .header-phone { display: none; }
   .header-cta { display: none; }
   .hamburger { display: flex; }
   .advantages-grid { grid-template-columns: 1fr; }
-  .implant-options-grid { grid-template-columns: 1fr 1fr; }
   .yomi-features { grid-template-columns: 1fr; }
   .full-mouth-options { grid-template-columns: 1fr; }
   .doctor-stats { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  #hero { min-height: 80vh; }
-  .cta-group { flex-direction: column; }
-  .cta-group .btn { justify-content: center; }
+  #hero { min-height: auto; padding: 110px 0 64px; }
+  .cta-group { flex-direction: column; align-items: stretch; }
+  .cta-group .btn { justify-content: center; width: 100%; }
+  .hero-badges { gap: 8px; margin-top: 24px; }
+  .hero-badge { font-size: 0.72rem; padding: 6px 12px; }
+  .hero-badge svg { width: 12px; height: 12px; }
+  h1, .hero-content h1 { font-size: clamp(1.9rem, 7vw, 2.6rem) !important; line-height: 1.15; }
+  h2 { font-size: clamp(1.5rem, 5vw, 2rem) !important; }
+  .section-header p, .hero-content p { font-size: 0.95rem; }
+  .doctor-card img { height: auto; }
+  .location-map { height: 260px; }
 }
 @media (max-width: 480px) {
   .implant-options-grid { grid-template-columns: 1fr; }
   .doctor-stats { grid-template-columns: 1fr; }
+  .hero-badges { gap: 6px; }
+  .hero-badge { font-size: 0.7rem; padding: 5px 10px; }
 }

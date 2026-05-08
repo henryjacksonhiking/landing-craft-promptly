@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import * as React from "react";
 import { useEffect, useRef, useState } from "react";
+import drSayeediImg from "@/assets/dr-sayeedi.jpg";
 
 const PHONE_HREF = "tel:+15104932130";
 const PHONE_TEXT = "(510) 493-2130";
@@ -268,7 +270,7 @@ function PatientFirst() {
           <div className="reveal-right">
             <div className="doctor-card">
               <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80"
+                src={drSayeediImg}
                 alt="Dr. Syed Zafar Sayeedi — Noble Dental Care"
                 width={600}
                 height={460}
@@ -292,12 +294,27 @@ function PatientFirst() {
 
 /* ---------------- WHY FREMONT ---------------- */
 function WhyFremont() {
-  const items = [
-    "Dental implant care planned around each patient's needs",
-    "Yomi robotic technology for guided implant placement",
-    "Experience in restorative, cosmetic, surgical, and preventive dentistry",
-    "Convenient access for Fremont, Union City, Newark, and Hayward patients",
-    "Personalized treatment planning with clear communication",
+  const items: { text: string; icon: React.ReactNode }[] = [
+    {
+      text: "Dental implant care planned around each patient's needs",
+      icon: <path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10h-4z" />,
+    },
+    {
+      text: "Yomi robotic technology for guided implant placement",
+      icon: <path d="M9 3h6v2h2a2 2 0 0 1 2 2v3h1v4h-1v3a2 2 0 0 1-2 2h-2v2H9v-2H7a2 2 0 0 1-2-2v-3H4v-4h1V7a2 2 0 0 1 2-2h2V3zm0 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />,
+    },
+    {
+      text: "Experience in restorative, cosmetic, surgical, and preventive dentistry",
+      icon: <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z" />,
+    },
+    {
+      text: "Convenient access for Fremont, Union City, Newark, and Hayward patients",
+      icon: <path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />,
+    },
+    {
+      text: "Personalized treatment planning with clear communication",
+      icon: <path d="M5 3h11l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 7v2h10v-2H7zm0 4v2h10v-2H7zm0 4v2h7v-2H7z" />,
+    },
   ];
   return (
     <section className="section section-dark" id="why-fremont">
@@ -313,12 +330,12 @@ function WhyFremont() {
           </p>
         </div>
         <div className="advantages-grid">
-          {items.map((t, i) => (
-            <div key={t} className={`adv-item reveal delay-${(i % 4) + 1}`}>
+          {items.map(({ text, icon }, i) => (
+            <div key={text} className={`adv-item reveal delay-${(i % 4) + 1}`}>
               <div className="adv-icon">
-                <svg viewBox="0 0 24 24" aria-hidden><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="currentColor" strokeWidth={2.4} /></svg>
+                <svg viewBox="0 0 24 24" aria-hidden>{icon}</svg>
               </div>
-              <p className="adv-text">{t}</p>
+              <p className="adv-text">{text}</p>
             </div>
           ))}
         </div>
@@ -334,13 +351,55 @@ function WhyFremont() {
 
 /* ---------------- IMPLANT OPTIONS ---------------- */
 function ImplantOptions() {
-  const cards = [
-    "Single Dental Implants",
-    "Implant-Supported Bridges",
-    "Implant-Supported Dentures",
-    "Full-Mouth Dental Implants",
-    "All-on-6 Full-Mouth Solutions",
-    "FP-1 Full-Arch Restorations",
+  const cards: { title: string; icon: React.ReactNode }[] = [
+    {
+      title: "Single Dental Implants",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M12 2c2.8 0 5 2.4 5 5.4 0 2-1 3.6-2 5-.8 1.2-1 2.4-1.2 4l-.3 4c-.1 1-.7 1.6-1.5 1.6s-1.4-.6-1.5-1.6l-.3-4c-.2-1.6-.4-2.8-1.2-4-1-1.4-2-3-2-5C7 4.4 9.2 2 12 2z" />
+        </svg>
+      ),
+    },
+    {
+      title: "Implant-Supported Bridges",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M4 6c1.5 0 2.5 1.2 2.5 3v3c0 1 .6 1.6 1.4 1.6.8 0 1.3-.6 1.3-1.6V9.5c0-1.4 1-2.5 2.8-2.5s2.8 1.1 2.8 2.5V12c0 1 .5 1.6 1.3 1.6.8 0 1.4-.6 1.4-1.6V9c0-1.8 1-3 2.5-3v3c-.5 0-.7.3-.7 1v3c0 2-1.4 3.5-3.2 3.5-1.4 0-2.5-.8-3-2-.5 1.2-1.6 2-3 2h-.2c-1.4 0-2.5-.8-3-2-.5 1.2-1.6 2-3 2C2.1 16.5.7 15 .7 13v-3c0-.7-.2-1-.7-1V6h4z" transform="translate(2 1)" />
+        </svg>
+      ),
+    },
+    {
+      title: "Implant-Supported Dentures",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M3 8c0-1.7 1.3-3 3-3 1.4 0 2.2.8 2.8 1.6.4.5.7.9 1.2.9.5 0 .8-.4 1.2-.9C11.8 5.8 12.6 5 14 5c1.7 0 3 1.3 3 3 0 .8-.2 1.5-.5 2.2L14 17c-.3.7-.9 1-1.5 1h-1c-.6 0-1.2-.3-1.5-1L7.5 10.2C7.2 9.5 7 8.8 7 8M19 14c0-1.7 1.3-3 3-3v3c-.4 0-.6.3-.6.8 0 .8-.7 1.5-1.5 1.5-.4 0-.7-.1-.9-.3" transform="translate(-1 0)" />
+        </svg>
+      ),
+    },
+    {
+      title: "Full-Mouth Dental Implants",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M12 3C7 3 3 6.5 3 11c0 2.5 1.2 4.7 3 6.2v2.3c0 .8.6 1.5 1.4 1.5.6 0 1.1-.4 1.4-1l.7-1.5c.8.2 1.6.3 2.5.3s1.7-.1 2.5-.3l.7 1.5c.3.6.8 1 1.4 1 .8 0 1.4-.7 1.4-1.5v-2.3c1.8-1.5 3-3.7 3-6.2 0-4.5-4-8-9-8zm-3.5 7c.8 0 1.5.7 1.5 1.5S9.3 13 8.5 13 7 12.3 7 11.5 7.7 10 8.5 10zm7 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5z" />
+        </svg>
+      ),
+    },
+    {
+      title: "All-on-6 Full-Mouth Solutions",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M12 2.5c-4.4 0-8 3-8 6.7 0 1.6.6 3 1.7 4.2.5.5.8 1.1.9 1.8l.5 4c.2 1.4 1.4 2.3 2.8 2.3.7 0 1.3-.5 1.5-1.2l.3-1c.1-.4.5-.6.9-.6h.8c.4 0 .8.2.9.6l.3 1c.2.7.8 1.2 1.5 1.2 1.4 0 2.6-.9 2.8-2.3l.5-4c.1-.7.4-1.3.9-1.8C19.4 12.2 20 10.8 20 9.2c0-3.7-3.6-6.7-8-6.7zM8 8.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-4 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-2.5 4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm5 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" />
+        </svg>
+      ),
+    },
+    {
+      title: "FP-1 Full-Arch Restorations",
+      icon: (
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M3 9c0-1 .8-1.8 1.8-1.8h14.4c1 0 1.8.8 1.8 1.8 0 .8-.5 1.5-1.2 1.7L17.5 18c-.4 1.2-1.5 2-2.7 2H9.2c-1.2 0-2.3-.8-2.7-2L4.2 10.7C3.5 10.5 3 9.8 3 9zm5 3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5S10.3 11 9.5 11 8 11.7 8 12.5zm5 0c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5S15.3 11 14.5 11 13 11.7 13 12.5z" />
+        </svg>
+      ),
+    },
   ];
   return (
     <section className="section section-alt" id="implant-options">
@@ -357,11 +416,9 @@ function ImplantOptions() {
           </p>
         </div>
         <div className="implant-options-grid">
-          {cards.map((title, i) => (
+          {cards.map(({ title, icon }, i) => (
             <div key={title} className={`implant-card reveal delay-${(i % 3) + 1}`}>
-              <div className="implant-icon">
-                <svg viewBox="0 0 24 24" aria-hidden><path d="M12 2c2.8 0 5 2.2 5 5 0 1.6-.7 3-1.8 3.9L14 21h-4L8.8 10.9A5 5 0 0 1 12 2z" /></svg>
-              </div>
+              <div className="implant-icon">{icon}</div>
               <h4>{title}</h4>
             </div>
           ))}
