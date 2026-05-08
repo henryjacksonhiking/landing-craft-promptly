@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import drSayeediImg from "@/assets/dr-sayeedi.jpg";
+import yomiDoctorImg from "@/assets/yomi-doctor.jpg";
+import nobleTeamImg from "@/assets/noble-team.png";
 
 const PHONE_HREF = "tel:+15104932130";
 const PHONE_TEXT = "(510) 493-2130";
@@ -86,7 +88,7 @@ const ArrowIcon = () => (
 );
 const CheckCircleIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.2 14.2l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z" />
   </svg>
 );
 const PinIcon = () => (
@@ -356,7 +358,9 @@ function ImplantOptions() {
       title: "Single Dental Implants",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M12 2c2.8 0 5 2.4 5 5.4 0 2-1 3.6-2 5-.8 1.2-1 2.4-1.2 4l-.3 4c-.1 1-.7 1.6-1.5 1.6s-1.4-.6-1.5-1.6l-.3-4c-.2-1.6-.4-2.8-1.2-4-1-1.4-2-3-2-5C7 4.4 9.2 2 12 2z" />
+          <circle cx="12" cy="6" r="3" />
+          <rect x="11" y="8" width="2" height="6" rx="0.6" />
+          <path d="M9.5 14h5l-1 6c-.1.7-.6 1-1.5 1s-1.4-.3-1.5-1l-1-6z" />
         </svg>
       ),
     },
@@ -364,7 +368,7 @@ function ImplantOptions() {
       title: "Implant-Supported Bridges",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M4 6c1.5 0 2.5 1.2 2.5 3v3c0 1 .6 1.6 1.4 1.6.8 0 1.3-.6 1.3-1.6V9.5c0-1.4 1-2.5 2.8-2.5s2.8 1.1 2.8 2.5V12c0 1 .5 1.6 1.3 1.6.8 0 1.4-.6 1.4-1.6V9c0-1.8 1-3 2.5-3v3c-.5 0-.7.3-.7 1v3c0 2-1.4 3.5-3.2 3.5-1.4 0-2.5-.8-3-2-.5 1.2-1.6 2-3 2h-.2c-1.4 0-2.5-.8-3-2-.5 1.2-1.6 2-3 2C2.1 16.5.7 15 .7 13v-3c0-.7-.2-1-.7-1V6h4z" transform="translate(2 1)" />
+          <path d="M3 8c0-1.1.9-2 2-2s2 .9 2 2v4c0 .8.5 1.4 1.3 1.4S9.6 12.8 9.6 12V9.5c0-1.4 1.1-2.3 2.4-2.3s2.4.9 2.4 2.3V12c0 .8.5 1.4 1.3 1.4s1.3-.6 1.3-1.4V8c0-1.1.9-2 2-2s2 .9 2 2v3.5c0 3.6-2.5 6.5-5.5 6.5h-7C5.5 18 3 15.1 3 11.5V8z" />
         </svg>
       ),
     },
@@ -372,7 +376,7 @@ function ImplantOptions() {
       title: "Implant-Supported Dentures",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 8c0-1.7 1.3-3 3-3 1.4 0 2.2.8 2.8 1.6.4.5.7.9 1.2.9.5 0 .8-.4 1.2-.9C11.8 5.8 12.6 5 14 5c1.7 0 3 1.3 3 3 0 .8-.2 1.5-.5 2.2L14 17c-.3.7-.9 1-1.5 1h-1c-.6 0-1.2-.3-1.5-1L7.5 10.2C7.2 9.5 7 8.8 7 8M19 14c0-1.7 1.3-3 3-3v3c-.4 0-.6.3-.6.8 0 .8-.7 1.5-1.5 1.5-.4 0-.7-.1-.9-.3" transform="translate(-1 0)" />
+          <path d="M4 9c0-2.2 1.8-4 4-4 1.6 0 2.6.9 3.3 1.7.4.4.5.6.7.6s.3-.2.7-.6C13.4 5.9 14.4 5 16 5c2.2 0 4 1.8 4 4 0 1.4-.4 2.5-.9 3.5l-2.6 5c-.5 1-1.5 1.5-2.6 1.5h-3.8c-1.1 0-2.1-.5-2.6-1.5l-2.6-5C4.4 11.5 4 10.4 4 9zm4 .5a1 1 0 100 2 1 1 0 000-2zm8 0a1 1 0 100 2 1 1 0 000-2z" />
         </svg>
       ),
     },
@@ -380,7 +384,7 @@ function ImplantOptions() {
       title: "Full-Mouth Dental Implants",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M12 3C7 3 3 6.5 3 11c0 2.5 1.2 4.7 3 6.2v2.3c0 .8.6 1.5 1.4 1.5.6 0 1.1-.4 1.4-1l.7-1.5c.8.2 1.6.3 2.5.3s1.7-.1 2.5-.3l.7 1.5c.3.6.8 1 1.4 1 .8 0 1.4-.7 1.4-1.5v-2.3c1.8-1.5 3-3.7 3-6.2 0-4.5-4-8-9-8zm-3.5 7c.8 0 1.5.7 1.5 1.5S9.3 13 8.5 13 7 12.3 7 11.5 7.7 10 8.5 10zm7 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5z" />
+          <path d="M12 3C7.6 3 4 6.4 4 10.5c0 2.2 1.1 4.2 2.8 5.5.4.3.7.8.8 1.3l.5 2.7c.2 1 1 1.7 2 1.7.7 0 1.3-.4 1.6-1l.4-.9c.1-.3.4-.5.7-.5h.4c.3 0 .6.2.7.5l.4.9c.3.6.9 1 1.6 1 1 0 1.8-.7 2-1.7l.5-2.7c.1-.5.4-1 .8-1.3 1.7-1.3 2.8-3.3 2.8-5.5C20 6.4 16.4 3 12 3zM8 9.5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zm8 0a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zm-4 0a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
         </svg>
       ),
     },
@@ -388,7 +392,13 @@ function ImplantOptions() {
       title: "All-on-6 Full-Mouth Solutions",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M12 2.5c-4.4 0-8 3-8 6.7 0 1.6.6 3 1.7 4.2.5.5.8 1.1.9 1.8l.5 4c.2 1.4 1.4 2.3 2.8 2.3.7 0 1.3-.5 1.5-1.2l.3-1c.1-.4.5-.6.9-.6h.8c.4 0 .8.2.9.6l.3 1c.2.7.8 1.2 1.5 1.2 1.4 0 2.6-.9 2.8-2.3l.5-4c.1-.7.4-1.3.9-1.8C19.4 12.2 20 10.8 20 9.2c0-3.7-3.6-6.7-8-6.7zM8 8.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-4 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-2.5 4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm5 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" />
+          <path d="M12 3C7.6 3 4 6.4 4 10.5c0 2.2 1.1 4.2 2.8 5.5.4.3.7.8.8 1.3l.5 2.7c.2 1 1 1.7 2 1.7.7 0 1.3-.4 1.6-1l.4-.9c.1-.3.4-.5.7-.5h.4c.3 0 .6.2.7.5l.4.9c.3.6.9 1 1.6 1 1 0 1.8-.7 2-1.7l.5-2.7c.1-.5.4-1 .8-1.3 1.7-1.3 2.8-3.3 2.8-5.5C20 6.4 16.4 3 12 3z" />
+          <circle cx="8" cy="10" r="1" fill="#0d4f47" />
+          <circle cx="12" cy="9.5" r="1" fill="#0d4f47" />
+          <circle cx="16" cy="10" r="1" fill="#0d4f47" />
+          <circle cx="9.5" cy="13" r="1" fill="#0d4f47" />
+          <circle cx="14.5" cy="13" r="1" fill="#0d4f47" />
+          <circle cx="12" cy="14.5" r="1" fill="#0d4f47" />
         </svg>
       ),
     },
@@ -396,7 +406,10 @@ function ImplantOptions() {
       title: "FP-1 Full-Arch Restorations",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 9c0-1 .8-1.8 1.8-1.8h14.4c1 0 1.8.8 1.8 1.8 0 .8-.5 1.5-1.2 1.7L17.5 18c-.4 1.2-1.5 2-2.7 2H9.2c-1.2 0-2.3-.8-2.7-2L4.2 10.7C3.5 10.5 3 9.8 3 9zm5 3.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5S10.3 11 9.5 11 8 11.7 8 12.5zm5 0c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5S15.3 11 14.5 11 13 11.7 13 12.5z" />
+          <path d="M3 8.5c0-.8.7-1.5 1.5-1.5h15c.8 0 1.5.7 1.5 1.5 0 .7-.5 1.3-1.1 1.5l-2.4 7.2c-.4 1.1-1.4 1.8-2.5 1.8h-6c-1.1 0-2.1-.7-2.5-1.8L4.1 10C3.5 9.8 3 9.2 3 8.5z" />
+          <rect x="7" y="11" width="2" height="3" rx="0.4" fill="#0d4f47" />
+          <rect x="11" y="11" width="2" height="3" rx="0.4" fill="#0d4f47" />
+          <rect x="15" y="11" width="2" height="3" rx="0.4" fill="#0d4f47" />
         </svg>
       ),
     },
@@ -453,10 +466,10 @@ function Yomi() {
           <div className="reveal-left">
             <div className="yomi-visual">
               <img
-                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
-                alt="Yomi robotic dental implant surgery"
+                src={yomiDoctorImg}
+                alt="Dr. Sayeedi with the Yomi robotic dental implant system"
                 width={600}
-                height={480}
+                height={600}
                 loading="lazy"
               />
               <div className="yomi-tag">
@@ -575,10 +588,10 @@ function Comprehensive() {
         <div className="two-col reverse">
           <div className="reveal-right">
             <img
-              src="https://images.unsplash.com/photo-1588776814546-1ffedee96e2e?w=800&q=80"
-              alt="Noble Dental Care comprehensive dentistry near Fremont"
+              src={nobleTeamImg}
+              alt="Noble Dental Care team in the Union City office"
               width={600}
-              height={500}
+              height={400}
               loading="lazy"
               style={{ borderRadius: 12, boxShadow: "var(--shadow-soft)", width: "100%" }}
             />
