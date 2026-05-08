@@ -269,7 +269,7 @@ function PatientFirst() {
           <div className="reveal-right">
             <div className="doctor-card">
               <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80"
+                src={drSayeediImg}
                 alt="Dr. Syed Zafar Sayeedi — Noble Dental Care"
                 width={600}
                 height={460}
