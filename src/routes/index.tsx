@@ -294,12 +294,27 @@ function PatientFirst() {
 
 /* ---------------- WHY FREMONT ---------------- */
 function WhyFremont() {
-  const items = [
-    "Dental implant care planned around each patient's needs",
-    "Yomi robotic technology for guided implant placement",
-    "Experience in restorative, cosmetic, surgical, and preventive dentistry",
-    "Convenient access for Fremont, Union City, Newark, and Hayward patients",
-    "Personalized treatment planning with clear communication",
+  const items: { text: string; icon: React.ReactNode }[] = [
+    {
+      text: "Dental implant care planned around each patient's needs",
+      icon: <path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10h-4z" />,
+    },
+    {
+      text: "Yomi robotic technology for guided implant placement",
+      icon: <path d="M9 3h6v2h2a2 2 0 0 1 2 2v3h1v4h-1v3a2 2 0 0 1-2 2h-2v2H9v-2H7a2 2 0 0 1-2-2v-3H4v-4h1V7a2 2 0 0 1 2-2h2V3zm0 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />,
+    },
+    {
+      text: "Experience in restorative, cosmetic, surgical, and preventive dentistry",
+      icon: <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z" />,
+    },
+    {
+      text: "Convenient access for Fremont, Union City, Newark, and Hayward patients",
+      icon: <path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />,
+    },
+    {
+      text: "Personalized treatment planning with clear communication",
+      icon: <path d="M5 3h11l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 7v2h10v-2H7zm0 4v2h10v-2H7zm0 4v2h7v-2H7z" />,
+    },
   ];
   return (
     <section className="section section-dark" id="why-fremont">
@@ -315,12 +330,12 @@ function WhyFremont() {
           </p>
         </div>
         <div className="advantages-grid">
-          {items.map((t, i) => (
-            <div key={t} className={`adv-item reveal delay-${(i % 4) + 1}`}>
+          {items.map(({ text, icon }, i) => (
+            <div key={text} className={`adv-item reveal delay-${(i % 4) + 1}`}>
               <div className="adv-icon">
-                <svg viewBox="0 0 24 24" aria-hidden><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="currentColor" strokeWidth={2.4} /></svg>
+                <svg viewBox="0 0 24 24" aria-hidden>{icon}</svg>
               </div>
-              <p className="adv-text">{t}</p>
+              <p className="adv-text">{text}</p>
             </div>
           ))}
         </div>
