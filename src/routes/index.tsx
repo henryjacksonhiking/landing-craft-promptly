@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import drSayeediImg from "@/assets/dr-sayeedi.jpg";
 
