@@ -560,8 +560,8 @@ function FullMouth() {
               </a>
             </div>
             <div className="cta-group reveal delay-5">
-              <a href="https://nobledentalcares.com/our-services/all-on-4-and-all-on-6" className="btn btn-outline-teal">
-                See Full-Arch Options
+              <a href="https://nobledentalcares.com/contacts" className="btn btn-outline-teal">
+                Contact Us
               </a>
             </div>
           </div>
