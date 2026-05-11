@@ -250,11 +250,12 @@
 
 /* Why choose */
 .advantages-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0 40px; }
-.adv-item { display: flex; align-items: flex-start; gap: 14px; padding: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: var(--radius-md); transition: background var(--transition), border-color var(--transition); }
+.adv-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding: 24px 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: var(--radius-md); transition: background var(--transition), border-color var(--transition); }
 .adv-item:hover { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.40); }
-.adv-icon { flex-shrink: 0; width: 44px; height: 44px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.45); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
-.adv-icon svg { width: 22px; height: 22px; fill: var(--gold); }
-.adv-text { font-size: 0.9rem; color: rgba(255,255,255,0.82); line-height: 1.5; font-weight: 500; }
+.adv-icon { flex-shrink: 0; width: 56px; height: 56px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.45); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
+.adv-icon svg { width: 28px; height: 28px; fill: var(--gold); }
+.adv-text { font-size: 0.92rem; color: rgba(255,255,255,0.86); line-height: 1.5; font-weight: 500; }
+.advantages-grid > .adv-item:nth-child(5):last-child { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
 
 /* Implant options */
 .implant-options-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin: 32px 0 40px; }
