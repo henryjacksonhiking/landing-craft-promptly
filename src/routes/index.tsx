@@ -218,9 +218,16 @@ function Hero() {
           </div>
           <div className="hero-video-wrap reveal-right delay-2">
             <div className="hero-video-card">
-              <div className="hero-play" aria-hidden>
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-              </div>
+              <video
+                className="hero-video"
+                src="/hero-video.webm"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label="Noble Dental Care — Union City Dentist"
+              />
               <div className="hero-video-caption">
                 <h3>Advanced Implant Care Preview</h3>
                 <p>
