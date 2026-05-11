@@ -757,11 +757,6 @@ function ClosingCTA() {
           your options. From single dental implants to full-mouth implant solutions and Yomi robotic guidance, the team
           provides thoughtful care designed around your needs.
         </p>
-        <div className="cta-group reveal delay-3">
-          <a href={BOOK} target="_blank" rel="noopener" className="btn btn-primary">
-            Schedule Your Consultation <ArrowIcon />
-          </a>
-        </div>
         <p className="reveal delay-4" style={{ marginTop: 36 }}>
           Your first step is a detailed consultation. The team can review your concerns, evaluate your oral health, discuss
           implant possibilities, and explain what type of treatment plan may be suitable for you.
