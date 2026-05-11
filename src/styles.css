@@ -223,7 +223,9 @@
   background: linear-gradient(135deg, rgba(23,116,102,0.30), rgba(8,53,48,0.62)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80') center/cover;
   box-shadow: 0 24px 70px rgba(0,0,0,0.24);
 }
-.hero-video-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(201,168,76,0.16), transparent 34%), linear-gradient(180deg, transparent 0%, rgba(8,53,48,0.82) 100%); }
+.hero-video-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 0%, transparent 55%, rgba(8,53,48,0.85) 100%); pointer-events: none; z-index: 1; }
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-video-caption { z-index: 2; }
 .hero-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 82px; height: 82px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 34px rgba(201,168,76,0.35); }
 .hero-play svg { width: 32px; height: 32px; fill: var(--teal-dark); margin-left: 4px; }
 .hero-video-caption { position: absolute; left: 28px; right: 28px; bottom: 28px; }
