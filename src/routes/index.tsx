@@ -386,61 +386,66 @@ function ImplantOptions() {
     {
       title: "Single Dental Implants",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M12 2c-2 0-3.2 1.4-3.2 3.2 0 1 .3 1.8.6 2.6.4 1 .8 2 .8 3.2v8c0 1.6.8 3 1.8 3s1.4-1 1.6-2.4l.4-3.4c.1-.6.5-.8.8-.2l.4.7c.4.6 1 1 1.6.6.6-.4.8-1.2.6-2l-.6-2.4c-.2-1 0-2 .4-3 .3-.8.6-1.7.6-2.7C15.2 3.4 14 2 12 2z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 3c-2.8 0-4.5 2-4.5 4.5 0 1.6.6 2.6 1.1 3.6.7 1.4 1 2.6 1 4.4 0 1.5.2 4 .9 5.6.3.7.8 1 1.3 1s.9-.4 1.1-1.2l.6-3.2c.1-.6.3-.9.5-.9s.4.3.5.9l.6 3.2c.2.8.6 1.2 1.1 1.2.5 0 1-.3 1.3-1 .7-1.6.9-4.1.9-5.6 0-1.8.3-3 1-4.4.5-1 1.1-2 1.1-3.6C16.5 5 14.8 3 12 3z" />
+          <line x1="12" y1="14" x2="12" y2="22" strokeDasharray="1.5 2" />
         </svg>
       ),
     },
     {
       title: "Implant-Supported Bridges",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 7c1.6 0 2.6 1 3.2 2.4l1.2 4c.2.6.6 1 1.2 1h6.8c.6 0 1-.4 1.2-1l1.2-4C18.4 8 19.4 7 21 7v2c-.6 0-1 .4-1.2 1l-1.6 5.4C17.8 17 16.4 18 14.8 18H9.2c-1.6 0-3-1-3.4-2.6L4.2 10c-.2-.6-.6-1-1.2-1V7zm5 7a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9c0-1.5 1-2.5 2.5-2.5S8 7.5 8 9.5c0 2-1 3.5-1 5.5" />
+          <path d="M9.5 9c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5c0 2-1 3.5-1 5.5" />
+          <path d="M16 9c0-1.5 1-2.5 2.5-2.5S21 7.5 21 9c0 2-1 3.5-1 5.5" />
+          <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       ),
     },
     {
       title: "Implant-Supported Dentures",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M4 8c0-1.6 1.4-3 3-3 1.2 0 2 .6 2.7 1.3.5.5 1.6 1.4 2.3 1.4s1.8-.9 2.3-1.4C15 5.6 15.8 5 17 5c1.6 0 3 1.4 3 3 0 .8-.2 1.6-.5 2.3l-2 4.7C17 16.3 16 17 14.8 17h-5.6C8 17 7 16.3 6.5 15L4.5 10.3C4.2 9.6 4 8.8 4 8z" />
-          <path d="M7 19h10v1.5c0 .8-.7 1.5-1.5 1.5h-7C7.7 22 7 21.3 7 20.5V19z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 8c0-1.7 1.3-3 3-3 1.2 0 2 .5 2.7 1.2.5.5 1.2 1 2.3 1s1.8-.5 2.3-1C14 5.5 14.8 5 16 5c1.7 0 3 1.3 3 3 0 .8-.2 1.5-.5 2.2L17 14.5c-.4 1-1.3 1.5-2.3 1.5h-5.4c-1 0-1.9-.5-2.3-1.5L3.5 10.2C3.2 9.5 3 8.8 3 8z" />
+          <path d="M7 17c.5 1.5 2.5 2.5 5 2.5s4.5-1 5-2.5" />
         </svg>
       ),
     },
     {
       title: "Full-Mouth Dental Implants",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 8c0-2.2 1.8-4 4-4 1.6 0 2.4.6 3.2 1.4.6.6 1.2 1 1.8 1s1.2-.4 1.8-1C14.6 4.6 15.4 4 17 4c2.2 0 4 1.8 4 4 0 1-.2 2-.6 2.8l-2.6 6.6C17.2 18.6 16 19.5 14.6 19.5h-5.2c-1.4 0-2.6-.9-3.2-2.1L3.6 10.8C3.2 10 3 9 3 8z" />
-          <circle cx="8" cy="9" r="1.1" fill="#0d4f47" />
-          <circle cx="12" cy="9" r="1.1" fill="#0d4f47" />
-          <circle cx="16" cy="9" r="1.1" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 7c1.5 0 2.5.7 3 2l1 3c.2.6.6 1 1.2 1h5.6c.6 0 1-.4 1.2-1l1-3c.5-1.3 1.5-2 3-2" />
+          <path d="M4 7v3M20 7v3" />
+          <path d="M6 14l1 4M18 14l-1 4" />
+          <line x1="9" y1="18" x2="15" y2="18" />
         </svg>
       ),
     },
     {
       title: "All-on-6 Full-Mouth Solutions",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 8c0-2.2 1.8-4 4-4 1.6 0 2.4.6 3.2 1.4.6.6 1.2 1 1.8 1s1.2-.4 1.8-1C14.6 4.6 15.4 4 17 4c2.2 0 4 1.8 4 4 0 1-.2 2-.6 2.8l-2.6 6.6C17.2 18.6 16 19.5 14.6 19.5h-5.2c-1.4 0-2.6-.9-3.2-2.1L3.6 10.8C3.2 10 3 9 3 8z" />
-          <circle cx="7" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="10" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="13" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="16" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="9" cy="12" r="0.9" fill="#0d4f47" />
-          <circle cx="14" cy="12" r="0.9" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9c.5-2 2-3 4-3 1.5 0 2.5.6 3 1.5.5-.9 1.5-1.5 2-1.5s1.5.6 2 1.5c.5-.9 1.5-1.5 3-1.5 2 0 3.5 1 4 3" />
+          <line x1="6" y1="12" x2="6" y2="16" />
+          <line x1="9.5" y1="12" x2="9.5" y2="16" />
+          <line x1="12" y1="12" x2="12" y2="16" />
+          <line x1="14.5" y1="12" x2="14.5" y2="16" />
+          <line x1="18" y1="12" x2="18" y2="16" />
+          <path d="M5 18h14" />
         </svg>
       ),
     },
     {
       title: "FP-1 Full-Arch Restorations",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M2 9c0-1 .8-1.8 1.8-1.8h16.4c1 0 1.8.8 1.8 1.8 0 .8-.5 1.5-1.3 1.7l-2.6 6.5c-.4 1.1-1.4 1.8-2.6 1.8H8.5c-1.2 0-2.2-.7-2.6-1.8L3.3 10.7C2.5 10.5 2 9.8 2 9z" />
-          <rect x="6" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
-          <rect x="10.9" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
-          <rect x="15.8" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 8c2-2 6-3 9-3s7 1 9 3" />
+          <rect x="5" y="10" width="3" height="5" rx="0.5" />
+          <rect x="10.5" y="10" width="3" height="5" rx="0.5" />
+          <rect x="16" y="10" width="3" height="5" rx="0.5" />
+          <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       ),
     },
