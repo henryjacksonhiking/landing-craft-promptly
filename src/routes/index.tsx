@@ -600,7 +600,7 @@ function FullMouth() {
               </a>
             </div>
           </div>
-          <div className="reveal-right">
+          <div className="reveal-right sticky-img">
             <img
               src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80"
               alt="Full-mouth dental implant consultation"
@@ -622,7 +622,7 @@ function Comprehensive() {
     <section className="section section-light" id="comprehensive">
       <div className="container">
         <div className="two-col reverse">
-          <div className="comprehensive-image-col">
+          <div className="comprehensive-image-col sticky-img">
             <img
               src={nobleTeamImg}
               alt="Noble Dental Care team in the Union City office"
@@ -711,7 +711,7 @@ function Location() {
               </a>
             </div>
           </div>
-          <div className="reveal-right">
+          <div className="reveal-right sticky-img">
             <div className="location-card">
               <div className="location-map">
                 <iframe
@@ -843,7 +843,7 @@ function FAQ() {
       <div className="container">
         <div className="section-header reveal" style={{ textAlign: "center", maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
           <span className="section-label">Frequently Asked Questions</span>
-          <h2>FAQs About Dentist in Fremont, CA and Dental Implants</h2>
+          <h2>Helpful Answers For Patients Considering Dental Treatment</h2>
           <div className="gold-bar" style={{ margin: "16px auto 0" }} />
         </div>
         <div className="faq-list reveal delay-1">
