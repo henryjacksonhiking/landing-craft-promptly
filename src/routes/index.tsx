@@ -658,7 +658,7 @@ function Location() {
               Newark, Hayward, and the wider Tri-City area.
             </p>
             <div className="cta-group reveal delay-1">
-              <a href={DIRECTIONS} target="_blank" rel="noopener" className="btn btn-primary">
+              <a href={DIRECTIONS} target="_blank" rel="noopener" className="btn btn-primary btn-icon-dark">
                 <PinIcon /> Get Directions
               </a>
             </div>
@@ -671,7 +671,7 @@ function Location() {
               ))}
             </div>
             <div className="cta-group reveal delay-4">
-              <a href={PHONE_HREF} className="btn btn-outline-light">
+              <a href={PHONE_HREF} className="btn btn-outline-light btn-icon-gold">
                 <PhoneIcon /> Call the Office
               </a>
             </div>
