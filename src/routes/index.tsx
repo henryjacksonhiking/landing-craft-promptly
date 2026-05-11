@@ -300,23 +300,51 @@ function WhyFremont() {
   const items: { text: string; icon: React.ReactNode }[] = [
     {
       text: "Dental implant care planned around each patient's needs",
-      icon: <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />,
+      icon: (
+        <>
+          <path d="M12 21s-7-4.5-7-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-7 11-7 11" />
+          <path d="M9 11l2 2 4-4" />
+        </>
+      ),
     },
     {
       text: "Yomi robotic technology for guided implant placement",
-      icon: <path d="M12 2a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v3a2 2 0 0 1-2 2h-3v1a2 2 0 1 1-4 0v-1H7a2 2 0 0 1-2-2v-3H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1V7a2 2 0 0 1 2-2h3V4a2 2 0 0 1 2-2zM9.5 9A1.5 1.5 0 1 0 11 10.5 1.5 1.5 0 0 0 9.5 9zm5 0A1.5 1.5 0 1 0 16 10.5 1.5 1.5 0 0 0 14.5 9zM8 14a4 4 0 0 0 8 0z" />,
+      icon: (
+        <>
+          <rect x="5" y="7" width="14" height="11" rx="2" />
+          <path d="M12 7V4M9 4h6" />
+          <circle cx="9" cy="12" r="1" />
+          <circle cx="15" cy="12" r="1" />
+          <path d="M9 16h6" />
+          <path d="M3 13h2M19 13h2" />
+        </>
+      ),
     },
     {
       text: "Experience in restorative, cosmetic, surgical, and preventive dentistry",
-      icon: <path d="M12 2l2.39 5.18 5.61.55-4.2 3.86 1.2 5.6L12 14.27 6.99 17.2l1.2-5.6L4 7.73l5.61-.55L12 2z" />,
+      icon: (
+        <>
+          <path d="M8 3c-2 0-3.5 1.5-3.5 3.5 0 1.2.4 2 .8 3 .5 1.2.7 2 .7 3.5 0 1 .2 4 1 6.5.4 1.2 1 1.5 1.6 1.5.7 0 1.1-.6 1.3-1.6l.6-3.4c.2-1 .6-1.5 1.5-1.5s1.3.5 1.5 1.5l.6 3.4c.2 1 .6 1.6 1.3 1.6.6 0 1.2-.3 1.6-1.5.8-2.5 1-5.5 1-6.5 0-1.5.2-2.3.7-3.5.4-1 .8-1.8.8-3C19.5 4.5 18 3 16 3c-1.5 0-2.5.7-3.2 1.5-.4.5-.6.5-.8.5s-.4 0-.8-.5C10.5 3.7 9.5 3 8 3z" />
+        </>
+      ),
     },
     {
       text: "Convenient access for Fremont, Union City, Newark, and Hayward patients",
-      icon: <path d="M12 2C7.58 2 4 5.58 4 10c0 6.5 8 12 8 12s8-5.5 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />,
+      icon: (
+        <>
+          <path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z" />
+          <circle cx="12" cy="9" r="2.5" />
+        </>
+      ),
     },
     {
       text: "Personalized treatment planning with clear communication",
-      icon: <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14zM8 13h8v2H8zm0 4h5v2H8zm0-8h3v2H8z" />,
+      icon: (
+        <>
+          <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          <path d="M8 9h8M8 13h5" />
+        </>
+      ),
     },
   ];
   return (
