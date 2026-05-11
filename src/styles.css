@@ -441,11 +441,48 @@
   .faq-answer-inner { padding: 0 18px 18px; }
   #back-to-top { bottom: 18px; right: 18px; width: 42px; height: 42px; }
 }
+@media (max-width: 1024px) {
+  /* Disable sticky images on tablet/mobile */
+  .sticky-img { position: static !important; top: auto !important; }
+}
+@media (max-width: 768px) {
+  .sticky-img { position: static !important; top: auto !important; }
+  /* Equal left/right padding on mobile */
+  .container { padding-left: 20px; padding-right: 20px; }
+  body { overflow-x: hidden; }
+  /* Prevent horizontal overflow */
+  img, iframe, video { max-width: 100%; height: auto; }
+  .hero-video { height: 100%; }
+  /* Section header text wrap */
+  .section-header h2, h1, h2, h3 { word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; }
+  /* Doctor card image fits */
+  .doctor-card img, .yomi-visual img { width: 100%; }
+  /* Two col gap reduced */
+  .two-col { gap: 32px; }
+  /* FAQ */
+  .faq-list { padding: 0; }
+  /* Header CTA hidden, show only logo + hamburger evenly spaced */
+  .header-inner { gap: 12px; }
+  /* Reduce closing CTA rings overflow */
+  .cta-ring-1, .cta-ring-2, .cta-ring-3 { display: none; }
+  /* Hero shapes */
+  .hero-shape-1, .hero-shape-2, .hero-shape-3 { display: none; }
+}
 @media (max-width: 480px) {
   .implant-options-grid { grid-template-columns: 1fr; }
   .doctor-stats { grid-template-columns: 1fr 1fr; }
   .hero-badges { gap: 6px; }
-  .hero-badge { font-size: 0.74rem; padding: 6px 11px; }
+  .hero-badge { font-size: 0.72rem; padding: 6px 10px; }
   .header-logo img { height: 34px; }
-  .container { padding: 0 16px; }
+  .container { padding-left: 18px; padding-right: 18px; }
+  .section { padding: 48px 0; }
+  #hero { padding: 88px 0 48px; }
+  .hero-video-card { min-height: 200px; aspect-ratio: 16/10; }
+  .doctor-card img { height: 320px; }
+  .yomi-visual img { height: 280px; }
+  .location-info { padding: 18px; }
+  .footer-grid { gap: 24px; }
+  .btn { padding: 12px 18px; font-size: 0.78rem; }
+  .section-header { margin-bottom: 28px; }
+  .gold-bar { margin: 12px 0 18px; }
 }
