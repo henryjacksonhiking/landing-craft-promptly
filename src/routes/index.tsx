@@ -327,7 +327,7 @@ function WhyFremont() {
           <h2>Why Fremont Patients Choose Noble Dental Care</h2>
           <div className="gold-bar" style={{ margin: "16px auto 20px" }} />
           <p style={{ color: "rgba(255,255,255,0.78)" }}>
-            Patients searching for a dentist in Fremont CA want clear answers, advanced care, and a team that can manage their
+            Patients searching for a dentist in Fremont, CA want clear answers, advanced care, and a team that can manage their
             treatment with confidence. Noble Dental Care provides comprehensive dentistry near Fremont — evaluation, planning,
             treatment, and follow-up in one trusted location.
           </p>
@@ -648,7 +648,7 @@ function Location() {
       <div className="container">
         <div className="section-header reveal" style={{ textAlign: "center", maxWidth: 680, marginLeft: "auto", marginRight: "auto" }}>
           <span className="section-label">Easy Access</span>
-          <h2>A Convenient Dental Implant Dentist Near Fremont CA</h2>
+          <h2>A Convenient Dental Implant Dentist Near Fremont, CA</h2>
           <div className="gold-bar" style={{ margin: "16px auto 20px" }} />
         </div>
         <div className="two-col">
@@ -744,7 +744,7 @@ function ClosingCTA() {
 /* ---------------- FAQ ---------------- */
 const FAQS: { q: string; a: string; cta: { label: string; href: string; external?: boolean } }[] = [
   {
-    q: "Is Noble Dental Care located in Fremont CA?",
+    q: "Is Noble Dental Care located in Fremont, CA?",
     a: "Noble Dental Care is located in Union City and serves patients from Fremont, Newark, Hayward, and nearby communities.",
     cta: { label: "Get Directions", href: DIRECTIONS, external: true },
   },
@@ -769,7 +769,7 @@ const FAQS: { q: string; a: string; cta: { label: string; href: string; external
     cta: { label: "View Full-Mouth Options", href: "https://nobledentalcares.com/our-services/all-on-4-and-all-on-6" },
   },
   {
-    q: "Why choose a dentist near Fremont CA?",
+    q: "Why choose a dentist near Fremont, CA?",
     a: "A nearby dentist makes consultation, treatment visits, follow-up care, and long-term maintenance more convenient.",
     cta: { label: "Book Your Visit", href: BOOK, external: true },
   },
@@ -808,7 +808,7 @@ function FAQ() {
       <div className="container">
         <div className="section-header reveal" style={{ textAlign: "center", maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
           <span className="section-label">Frequently Asked Questions</span>
-          <h2>FAQs About Dentist in Fremont CA and Dental Implants</h2>
+          <h2>FAQs About Dentist in Fremont, CA and Dental Implants</h2>
           <div className="gold-bar" style={{ margin: "16px auto 0" }} />
         </div>
         <div className="faq-list reveal delay-1">
