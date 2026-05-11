@@ -371,13 +371,14 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-layout { grid-template-columns: 1fr; gap: 36px; }
-  .hero-video-card { min-height: 360px; }
+  .hero-video-card { min-height: 320px; aspect-ratio: 16/9; }
   .two-col { grid-template-columns: 1fr; gap: 48px; }
   .two-col.reverse { direction: ltr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
   .hero-content { max-width: 100%; }
   .hero-badges { margin-top: 28px; }
   .implant-options-grid { grid-template-columns: 1fr 1fr; }
+  .advantages-grid > .adv-item:nth-child(5):last-child { max-width: 100%; }
 }
 @media (max-width: 768px) {
   .container { padding: 0 18px; }
