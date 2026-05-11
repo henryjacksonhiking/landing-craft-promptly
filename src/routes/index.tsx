@@ -269,7 +269,7 @@ function PatientFirst() {
               </a>
             </div>
           </div>
-          <div className="reveal-right">
+          <div className="reveal-right sticky-img">
             <div className="doctor-card">
               <img
                 src={drSayeediImg}
@@ -300,23 +300,51 @@ function WhyFremont() {
   const items: { text: string; icon: React.ReactNode }[] = [
     {
       text: "Dental implant care planned around each patient's needs",
-      icon: <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />,
+      icon: (
+        <>
+          <path d="M12 21s-7-4.5-7-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-7 11-7 11" />
+          <path d="M9 11l2 2 4-4" />
+        </>
+      ),
     },
     {
       text: "Yomi robotic technology for guided implant placement",
-      icon: <path d="M12 2a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v3a2 2 0 0 1-2 2h-3v1a2 2 0 1 1-4 0v-1H7a2 2 0 0 1-2-2v-3H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1V7a2 2 0 0 1 2-2h3V4a2 2 0 0 1 2-2zM9.5 9A1.5 1.5 0 1 0 11 10.5 1.5 1.5 0 0 0 9.5 9zm5 0A1.5 1.5 0 1 0 16 10.5 1.5 1.5 0 0 0 14.5 9zM8 14a4 4 0 0 0 8 0z" />,
+      icon: (
+        <>
+          <rect x="5" y="7" width="14" height="11" rx="2" />
+          <path d="M12 7V4M9 4h6" />
+          <circle cx="9" cy="12" r="1" />
+          <circle cx="15" cy="12" r="1" />
+          <path d="M9 16h6" />
+          <path d="M3 13h2M19 13h2" />
+        </>
+      ),
     },
     {
       text: "Experience in restorative, cosmetic, surgical, and preventive dentistry",
-      icon: <path d="M12 2l2.39 5.18 5.61.55-4.2 3.86 1.2 5.6L12 14.27 6.99 17.2l1.2-5.6L4 7.73l5.61-.55L12 2z" />,
+      icon: (
+        <>
+          <path d="M8 3c-2 0-3.5 1.5-3.5 3.5 0 1.2.4 2 .8 3 .5 1.2.7 2 .7 3.5 0 1 .2 4 1 6.5.4 1.2 1 1.5 1.6 1.5.7 0 1.1-.6 1.3-1.6l.6-3.4c.2-1 .6-1.5 1.5-1.5s1.3.5 1.5 1.5l.6 3.4c.2 1 .6 1.6 1.3 1.6.6 0 1.2-.3 1.6-1.5.8-2.5 1-5.5 1-6.5 0-1.5.2-2.3.7-3.5.4-1 .8-1.8.8-3C19.5 4.5 18 3 16 3c-1.5 0-2.5.7-3.2 1.5-.4.5-.6.5-.8.5s-.4 0-.8-.5C10.5 3.7 9.5 3 8 3z" />
+        </>
+      ),
     },
     {
       text: "Convenient access for Fremont, Union City, Newark, and Hayward patients",
-      icon: <path d="M12 2C7.58 2 4 5.58 4 10c0 6.5 8 12 8 12s8-5.5 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />,
+      icon: (
+        <>
+          <path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12z" />
+          <circle cx="12" cy="9" r="2.5" />
+        </>
+      ),
     },
     {
       text: "Personalized treatment planning with clear communication",
-      icon: <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14zM8 13h8v2H8zm0 4h5v2H8zm0-8h3v2H8z" />,
+      icon: (
+        <>
+          <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          <path d="M8 9h8M8 13h5" />
+        </>
+      ),
     },
   ];
   return (
@@ -358,61 +386,66 @@ function ImplantOptions() {
     {
       title: "Single Dental Implants",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M12 2c-2 0-3.2 1.4-3.2 3.2 0 1 .3 1.8.6 2.6.4 1 .8 2 .8 3.2v8c0 1.6.8 3 1.8 3s1.4-1 1.6-2.4l.4-3.4c.1-.6.5-.8.8-.2l.4.7c.4.6 1 1 1.6.6.6-.4.8-1.2.6-2l-.6-2.4c-.2-1 0-2 .4-3 .3-.8.6-1.7.6-2.7C15.2 3.4 14 2 12 2z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 3c-2.8 0-4.5 2-4.5 4.5 0 1.6.6 2.6 1.1 3.6.7 1.4 1 2.6 1 4.4 0 1.5.2 4 .9 5.6.3.7.8 1 1.3 1s.9-.4 1.1-1.2l.6-3.2c.1-.6.3-.9.5-.9s.4.3.5.9l.6 3.2c.2.8.6 1.2 1.1 1.2.5 0 1-.3 1.3-1 .7-1.6.9-4.1.9-5.6 0-1.8.3-3 1-4.4.5-1 1.1-2 1.1-3.6C16.5 5 14.8 3 12 3z" />
+          <line x1="12" y1="14" x2="12" y2="22" strokeDasharray="1.5 2" />
         </svg>
       ),
     },
     {
       title: "Implant-Supported Bridges",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 7c1.6 0 2.6 1 3.2 2.4l1.2 4c.2.6.6 1 1.2 1h6.8c.6 0 1-.4 1.2-1l1.2-4C18.4 8 19.4 7 21 7v2c-.6 0-1 .4-1.2 1l-1.6 5.4C17.8 17 16.4 18 14.8 18H9.2c-1.6 0-3-1-3.4-2.6L4.2 10c-.2-.6-.6-1-1.2-1V7zm5 7a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9c0-1.5 1-2.5 2.5-2.5S8 7.5 8 9.5c0 2-1 3.5-1 5.5" />
+          <path d="M9.5 9c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5c0 2-1 3.5-1 5.5" />
+          <path d="M16 9c0-1.5 1-2.5 2.5-2.5S21 7.5 21 9c0 2-1 3.5-1 5.5" />
+          <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       ),
     },
     {
       title: "Implant-Supported Dentures",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M4 8c0-1.6 1.4-3 3-3 1.2 0 2 .6 2.7 1.3.5.5 1.6 1.4 2.3 1.4s1.8-.9 2.3-1.4C15 5.6 15.8 5 17 5c1.6 0 3 1.4 3 3 0 .8-.2 1.6-.5 2.3l-2 4.7C17 16.3 16 17 14.8 17h-5.6C8 17 7 16.3 6.5 15L4.5 10.3C4.2 9.6 4 8.8 4 8z" />
-          <path d="M7 19h10v1.5c0 .8-.7 1.5-1.5 1.5h-7C7.7 22 7 21.3 7 20.5V19z" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 8c0-1.7 1.3-3 3-3 1.2 0 2 .5 2.7 1.2.5.5 1.2 1 2.3 1s1.8-.5 2.3-1C14 5.5 14.8 5 16 5c1.7 0 3 1.3 3 3 0 .8-.2 1.5-.5 2.2L17 14.5c-.4 1-1.3 1.5-2.3 1.5h-5.4c-1 0-1.9-.5-2.3-1.5L3.5 10.2C3.2 9.5 3 8.8 3 8z" />
+          <path d="M7 17c.5 1.5 2.5 2.5 5 2.5s4.5-1 5-2.5" />
         </svg>
       ),
     },
     {
       title: "Full-Mouth Dental Implants",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 8c0-2.2 1.8-4 4-4 1.6 0 2.4.6 3.2 1.4.6.6 1.2 1 1.8 1s1.2-.4 1.8-1C14.6 4.6 15.4 4 17 4c2.2 0 4 1.8 4 4 0 1-.2 2-.6 2.8l-2.6 6.6C17.2 18.6 16 19.5 14.6 19.5h-5.2c-1.4 0-2.6-.9-3.2-2.1L3.6 10.8C3.2 10 3 9 3 8z" />
-          <circle cx="8" cy="9" r="1.1" fill="#0d4f47" />
-          <circle cx="12" cy="9" r="1.1" fill="#0d4f47" />
-          <circle cx="16" cy="9" r="1.1" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 7c1.5 0 2.5.7 3 2l1 3c.2.6.6 1 1.2 1h5.6c.6 0 1-.4 1.2-1l1-3c.5-1.3 1.5-2 3-2" />
+          <path d="M4 7v3M20 7v3" />
+          <path d="M6 14l1 4M18 14l-1 4" />
+          <line x1="9" y1="18" x2="15" y2="18" />
         </svg>
       ),
     },
     {
       title: "All-on-6 Full-Mouth Solutions",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M3 8c0-2.2 1.8-4 4-4 1.6 0 2.4.6 3.2 1.4.6.6 1.2 1 1.8 1s1.2-.4 1.8-1C14.6 4.6 15.4 4 17 4c2.2 0 4 1.8 4 4 0 1-.2 2-.6 2.8l-2.6 6.6C17.2 18.6 16 19.5 14.6 19.5h-5.2c-1.4 0-2.6-.9-3.2-2.1L3.6 10.8C3.2 10 3 9 3 8z" />
-          <circle cx="7" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="10" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="13" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="16" cy="9" r="0.9" fill="#0d4f47" />
-          <circle cx="9" cy="12" r="0.9" fill="#0d4f47" />
-          <circle cx="14" cy="12" r="0.9" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9c.5-2 2-3 4-3 1.5 0 2.5.6 3 1.5.5-.9 1.5-1.5 2-1.5s1.5.6 2 1.5c.5-.9 1.5-1.5 3-1.5 2 0 3.5 1 4 3" />
+          <line x1="6" y1="12" x2="6" y2="16" />
+          <line x1="9.5" y1="12" x2="9.5" y2="16" />
+          <line x1="12" y1="12" x2="12" y2="16" />
+          <line x1="14.5" y1="12" x2="14.5" y2="16" />
+          <line x1="18" y1="12" x2="18" y2="16" />
+          <path d="M5 18h14" />
         </svg>
       ),
     },
     {
       title: "FP-1 Full-Arch Restorations",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M2 9c0-1 .8-1.8 1.8-1.8h16.4c1 0 1.8.8 1.8 1.8 0 .8-.5 1.5-1.3 1.7l-2.6 6.5c-.4 1.1-1.4 1.8-2.6 1.8H8.5c-1.2 0-2.2-.7-2.6-1.8L3.3 10.7C2.5 10.5 2 9.8 2 9z" />
-          <rect x="6" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
-          <rect x="10.9" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
-          <rect x="15.8" y="11" width="2.2" height="3.4" rx="0.5" fill="#0d4f47" />
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 8c2-2 6-3 9-3s7 1 9 3" />
+          <rect x="5" y="10" width="3" height="5" rx="0.5" />
+          <rect x="10.5" y="10" width="3" height="5" rx="0.5" />
+          <rect x="16" y="10" width="3" height="5" rx="0.5" />
+          <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       ),
     },
@@ -466,7 +499,7 @@ function Yomi() {
     <section className="section section-light" id="yomi">
       <div className="container">
         <div className="two-col">
-          <div className="reveal-left">
+          <div className="reveal-left sticky-img">
             <div className="yomi-visual">
               <img
                 src={yomiDoctorImg}
@@ -567,7 +600,7 @@ function FullMouth() {
               </a>
             </div>
           </div>
-          <div className="reveal-right">
+          <div className="reveal-right sticky-img">
             <img
               src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80"
               alt="Full-mouth dental implant consultation"
@@ -589,7 +622,7 @@ function Comprehensive() {
     <section className="section section-light" id="comprehensive">
       <div className="container">
         <div className="two-col reverse">
-          <div className="comprehensive-image-col">
+          <div className="comprehensive-image-col sticky-img">
             <img
               src={nobleTeamImg}
               alt="Noble Dental Care team in the Union City office"
@@ -678,7 +711,7 @@ function Location() {
               </a>
             </div>
           </div>
-          <div className="reveal-right">
+          <div className="reveal-right sticky-img">
             <div className="location-card">
               <div className="location-map">
                 <iframe
@@ -724,11 +757,6 @@ function ClosingCTA() {
           your options. From single dental implants to full-mouth implant solutions and Yomi robotic guidance, the team
           provides thoughtful care designed around your needs.
         </p>
-        <div className="cta-group reveal delay-3">
-          <a href={BOOK} target="_blank" rel="noopener" className="btn btn-primary">
-            Schedule Your Consultation <ArrowIcon />
-          </a>
-        </div>
         <p className="reveal delay-4" style={{ marginTop: 36 }}>
           Your first step is a detailed consultation. The team can review your concerns, evaluate your oral health, discuss
           implant possibilities, and explain what type of treatment plan may be suitable for you.
@@ -810,7 +838,7 @@ function FAQ() {
       <div className="container">
         <div className="section-header reveal" style={{ textAlign: "center", maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
           <span className="section-label">Frequently Asked Questions</span>
-          <h2>FAQs About Dentist in Fremont, CA and Dental Implants</h2>
+          <h2>Helpful Answers For Patients Considering Dental Treatment</h2>
           <div className="gold-bar" style={{ margin: "16px auto 0" }} />
         </div>
         <div className="faq-list reveal delay-1">

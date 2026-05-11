@@ -155,7 +155,8 @@
 .btn-teal:hover { background: var(--teal-dark); border-color: var(--teal-dark); }
 
 /* Sections */
-.section { padding: 88px 0; position: relative; overflow: hidden; }
+.section { padding: 88px 0; position: relative; overflow-x: clip; overflow-y: visible; }
+.sticky-img { position: sticky; top: 100px; align-self: start; }
 .section-dark { background: var(--teal-dark); }
 .section-dark h2, .section-dark h3, .section-dark strong { color: var(--white); }
 .section-dark p, .section-dark li { color: rgba(255,255,255,0.82); }
@@ -250,19 +251,19 @@
 
 /* Why choose */
 .advantages-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0 40px; }
-.adv-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding: 24px 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: var(--radius-md); transition: background var(--transition), border-color var(--transition); }
+.adv-item { display: flex; flex-direction: row; align-items: center; text-align: left; gap: 18px; padding: 22px 22px; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: var(--radius-md); transition: background var(--transition), border-color var(--transition); }
 .adv-item:hover { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.40); }
-.adv-icon { flex-shrink: 0; width: 56px; height: 56px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.45); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
-.adv-icon svg { width: 28px; height: 28px; fill: var(--gold); }
-.adv-text { font-size: 0.92rem; color: rgba(255,255,255,0.86); line-height: 1.5; font-weight: 500; }
-.advantages-grid > .adv-item:nth-child(5):last-child { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
+.adv-icon { flex-shrink: 0; width: 64px; height: 64px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.45); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
+.adv-icon svg { width: 34px; height: 34px; fill: none; stroke: var(--gold); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.adv-text { font-size: 0.92rem; color: rgba(255,255,255,0.86); line-height: 1.5; font-weight: 500; margin: 0; }
+.advantages-grid > .adv-item:nth-child(5):last-child { grid-column: 1 / -1; max-width: 60%; margin: 0 auto; }
 
 /* Implant options */
 .implant-options-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin: 32px 0 40px; }
 .implant-card { background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius-lg); padding: 28px 24px; text-align: center; transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); }
 .implant-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-gold); border-color: rgba(201,168,76,0.45); }
-.implant-icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--teal-dark), var(--teal)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
-.implant-icon svg { width: 24px; height: 24px; fill: var(--gold); }
+.implant-icon { width: 72px; height: 72px; background: linear-gradient(135deg, var(--teal-dark), var(--teal)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.implant-icon svg { width: 38px; height: 38px; fill: none; stroke: var(--gold); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .implant-card h4 { font-size: 0.92rem; color: var(--teal-dark); font-weight: 700; }
 
 /* Yomi */
