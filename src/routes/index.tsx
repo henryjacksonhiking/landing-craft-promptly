@@ -190,10 +190,10 @@ function Hero() {
               Serving Fremont, Union City &amp; Nearby
             </span>
             <h1 id="hero-heading" className="reveal delay-1">
-              Trusted <span>Dentist in<br />Fremont CA</span>
+              Trusted <span>Dentist in<br />Fremont, CA</span>
             </h1>
             <p className="reveal delay-2">
-              Looking for a <strong style={{ color: "var(--white)", fontWeight: 700 }}>Dentist in Fremont CA</strong> who can help
+              Looking for a <strong style={{ color: "var(--white)", fontWeight: 700 }}>Dentist in Fremont, CA</strong> who can help
               you restore missing teeth with advanced dental implant care? Noble Dental Care welcomes patients from Fremont,
               Union City, Newark, and nearby communities for personalized implant dentistry supported by modern technology,
               careful planning, and the experience of Dr. Syed Zafar Sayeedi.
@@ -202,12 +202,12 @@ function Hero() {
               <a href={BOOK} target="_blank" rel="noopener" className="btn btn-primary">
                 Schedule Your Consultation <ArrowIcon />
               </a>
-              <a href={PHONE_HREF} className="btn btn-outline-light">
+              <a href={PHONE_HREF} className="btn btn-outline-light btn-icon-gold">
                 <PhoneIcon /> Call Now
               </a>
             </div>
             <div className="hero-badges reveal delay-4">
-              {["Yomi Robotic Technology", "Fellowship in Implantology", "20+ Years Experience", "Serving Fremont & Tri-City Area"].map(
+              {["Yomi Robotic Technology", "Fellowship in Implantology", "20+ Years Experience"].map(
                 (t) => (
                   <span className="hero-badge" key={t}>
                     <CheckCircleIcon /> {t}
@@ -228,13 +228,6 @@ function Hero() {
                 preload="metadata"
                 aria-label="Noble Dental Care — Union City Dentist"
               />
-              <div className="hero-video-caption">
-                <h3>Advanced Implant Care Preview</h3>
-                <p>
-                  Yomi robotic implant planning, patient comfort, and the Noble Dental Care experience — all in one
-                  precision-guided workflow.
-                </p>
-              </div>
             </div>
           </div>
         </div>
