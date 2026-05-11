@@ -300,23 +300,23 @@ function WhyFremont() {
   const items: { text: string; icon: React.ReactNode }[] = [
     {
       text: "Dental implant care planned around each patient's needs",
-      icon: <path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10h-4z" />,
+      icon: <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />,
     },
     {
       text: "Yomi robotic technology for guided implant placement",
-      icon: <path d="M9 3h6v2h2a2 2 0 0 1 2 2v3h1v4h-1v3a2 2 0 0 1-2 2h-2v2H9v-2H7a2 2 0 0 1-2-2v-3H4v-4h1V7a2 2 0 0 1 2-2h2V3zm0 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />,
+      icon: <path d="M12 2a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v3a2 2 0 0 1-2 2h-3v1a2 2 0 1 1-4 0v-1H7a2 2 0 0 1-2-2v-3H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1V7a2 2 0 0 1 2-2h3V4a2 2 0 0 1 2-2zM9.5 9A1.5 1.5 0 1 0 11 10.5 1.5 1.5 0 0 0 9.5 9zm5 0A1.5 1.5 0 1 0 16 10.5 1.5 1.5 0 0 0 14.5 9zM8 14a4 4 0 0 0 8 0z" />,
     },
     {
       text: "Experience in restorative, cosmetic, surgical, and preventive dentistry",
-      icon: <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z" />,
+      icon: <path d="M12 2l2.39 5.18 5.61.55-4.2 3.86 1.2 5.6L12 14.27 6.99 17.2l1.2-5.6L4 7.73l5.61-.55L12 2z" />,
     },
     {
       text: "Convenient access for Fremont, Union City, Newark, and Hayward patients",
-      icon: <path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />,
+      icon: <path d="M12 2C7.58 2 4 5.58 4 10c0 6.5 8 12 8 12s8-5.5 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />,
     },
     {
       text: "Personalized treatment planning with clear communication",
-      icon: <path d="M5 3h11l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 7v2h10v-2H7zm0 4v2h10v-2H7zm0 4v2h7v-2H7z" />,
+      icon: <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14zM8 13h8v2H8zm0 4h5v2H8zm0-8h3v2H8z" />,
     },
   ];
   return (
