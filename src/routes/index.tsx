@@ -15,13 +15,13 @@ const DIRECTIONS = "https://g.co/kgs/X9q2BJg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dentist in Fremont CA | Dental Implants Near Fremont" },
+      { title: "Dentist in Fremont, CA | Dental Implants Near Fremont" },
       {
         name: "description",
         content:
           "Looking for dental implants near Fremont, CA? Noble Dental Care offers advanced care with Yomi robotic technology for precise, comfortable results.",
       },
-      { property: "og:title", content: "Dentist in Fremont CA | Noble Dental Care" },
+      { property: "og:title", content: "Dentist in Fremont, CA | Noble Dental Care" },
       {
         property: "og:description",
         content:
