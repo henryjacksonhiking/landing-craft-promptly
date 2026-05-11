@@ -155,7 +155,8 @@
 .btn-teal:hover { background: var(--teal-dark); border-color: var(--teal-dark); }
 
 /* Sections */
-.section { padding: 88px 0; position: relative; overflow: hidden; }
+.section { padding: 88px 0; position: relative; overflow-x: clip; overflow-y: visible; }
+.sticky-img { position: sticky; top: 100px; align-self: start; }
 .section-dark { background: var(--teal-dark); }
 .section-dark h2, .section-dark h3, .section-dark strong { color: var(--white); }
 .section-dark p, .section-dark li { color: rgba(255,255,255,0.82); }
