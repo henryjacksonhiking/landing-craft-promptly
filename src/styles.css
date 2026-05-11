@@ -286,7 +286,7 @@
 
 /* Comprehensive */
 #comprehensive .two-col { align-items: start; }
-.comprehensive-image-col { align-self: start; position: sticky; top: 100px; }
+.comprehensive-image-col { align-self: start; }
 .comprehensive-steps { margin: 28px 0 36px; }
 .step-item { display: flex; align-items: flex-start; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--gray-light); }
 .step-item:last-child { border-bottom: none; }
