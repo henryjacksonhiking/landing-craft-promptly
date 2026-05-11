@@ -261,7 +261,7 @@ function PatientFirst() {
               Dr. Syed Zafar Sayeedi has been in dentistry since 2001 and is known for restorative, cosmetic, surgical, and
               preventive care. His Fellowship in Implantology and continued education in implants, esthetics, orthodontics,
               and endodontics help Noble Dental Care provide a more complete treatment experience for patients seeking a
-              dentist near Fremont CA.
+              dentist near Fremont, CA.
             </p>
             <div className="cta-group reveal delay-4">
               <a href="https://nobledentalcares.com/about-us" className="btn btn-outline-teal">
@@ -277,6 +277,7 @@ function PatientFirst() {
                 width={600}
                 height={460}
                 loading="lazy"
+                style={{ transform: "scaleX(-1)" }}
               />
               <div className="doctor-overlay">
                 <p className="doctor-name">Dr. Syed Zafar Sayeedi</p>
@@ -285,7 +286,7 @@ function PatientFirst() {
             </div>
             <div className="doctor-stats">
               <div className="stat-box"><div className="stat-num">20+</div><div className="stat-label">Years in Dentistry</div></div>
-              <div className="stat-box"><div className="stat-num">4</div><div className="stat-label">Cities Served</div></div>
+              <div className="stat-box"><div className="stat-num">100%</div><div className="stat-label">Personalized Care</div></div>
             </div>
           </div>
         </div>
