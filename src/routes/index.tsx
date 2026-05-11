@@ -499,7 +499,7 @@ function Yomi() {
     <section className="section section-light" id="yomi">
       <div className="container">
         <div className="two-col">
-          <div className="reveal-left">
+          <div className="reveal-left sticky-img">
             <div className="yomi-visual">
               <img
                 src={yomiDoctorImg}
