@@ -587,14 +587,14 @@ function Comprehensive() {
     <section className="section section-light" id="comprehensive">
       <div className="container">
         <div className="two-col reverse">
-          <div className="reveal-right">
+          <div className="comprehensive-image-col">
             <img
               src={nobleTeamImg}
               alt="Noble Dental Care team in the Union City office"
               width={600}
               height={400}
               loading="lazy"
-              style={{ borderRadius: 12, boxShadow: "var(--shadow-soft)", width: "100%" }}
+              style={{ borderRadius: 12, boxShadow: "var(--shadow-soft)", width: "100%", display: "block" }}
             />
           </div>
           <div>
