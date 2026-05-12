@@ -522,8 +522,8 @@
   min-height: 88px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   gap: 0.65rem;
   padding: 1rem 1.1rem;
   background: var(--teal-pale);
