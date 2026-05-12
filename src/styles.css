@@ -522,8 +522,8 @@
   min-height: 88px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   gap: 0.65rem;
   padding: 1rem 1.1rem;
   background: var(--teal-pale);
@@ -549,7 +549,7 @@
   background: var(--gold, #b8902f);
   box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold, #b8902f) 18%, transparent);
 }
-.service-text { flex: 0 1 auto; }
+.service-text { flex: 1; }
 .service-card .inline-link { color: var(--teal-dark); }
 
 @media (max-width: 900px) {
