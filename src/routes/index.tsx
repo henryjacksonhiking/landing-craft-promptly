@@ -436,9 +436,16 @@ function ImplantOptions() {
           Our Fremont-area patients have access to a comprehensive range of general, cosmetic, restorative, and surgical
           dental services, including:
         </p>
-        <ul className="services-list reveal">
+        <ul className="services-grid">
           {services.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li
+              key={i}
+              className="service-card reveal"
+              style={{ transitionDelay: `${(i % 4) * 80}ms` }}
+            >
+              <span className="service-dot" aria-hidden="true" />
+              <span className="service-text">{item}</span>
+            </li>
           ))}
         </ul>
         <div className="cta-group reveal" style={{ justifyContent: "center", marginTop: "2.5rem" }}>
