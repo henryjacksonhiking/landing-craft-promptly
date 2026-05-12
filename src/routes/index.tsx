@@ -382,110 +382,68 @@ function WhyFremont() {
 
 /* ---------------- IMPLANT OPTIONS ---------------- */
 function ImplantOptions() {
-  const cards: { title: string; icon: React.ReactNode }[] = [
-    {
-      title: "Single Dental Implants",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 3c-2.8 0-4.5 2-4.5 4.5 0 1.6.6 2.6 1.1 3.6.7 1.4 1 2.6 1 4.4 0 1.5.2 4 .9 5.6.3.7.8 1 1.3 1s.9-.4 1.1-1.2l.6-3.2c.1-.6.3-.9.5-.9s.4.3.5.9l.6 3.2c.2.8.6 1.2 1.1 1.2.5 0 1-.3 1.3-1 .7-1.6.9-4.1.9-5.6 0-1.8.3-3 1-4.4.5-1 1.1-2 1.1-3.6C16.5 5 14.8 3 12 3z" />
-          <line x1="12" y1="14" x2="12" y2="22" strokeDasharray="1.5 2" />
-        </svg>
-      ),
-    },
-    {
-      title: "Implant-Supported Bridges",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 9c0-1.5 1-2.5 2.5-2.5S8 7.5 8 9.5c0 2-1 3.5-1 5.5" />
-          <path d="M9.5 9c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5c0 2-1 3.5-1 5.5" />
-          <path d="M16 9c0-1.5 1-2.5 2.5-2.5S21 7.5 21 9c0 2-1 3.5-1 5.5" />
-          <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
-      ),
-    },
-    {
-      title: "Implant-Supported Dentures",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 8c0-1.7 1.3-3 3-3 1.2 0 2 .5 2.7 1.2.5.5 1.2 1 2.3 1s1.8-.5 2.3-1C14 5.5 14.8 5 16 5c1.7 0 3 1.3 3 3 0 .8-.2 1.5-.5 2.2L17 14.5c-.4 1-1.3 1.5-2.3 1.5h-5.4c-1 0-1.9-.5-2.3-1.5L3.5 10.2C3.2 9.5 3 8.8 3 8z" />
-          <path d="M7 17c.5 1.5 2.5 2.5 5 2.5s4.5-1 5-2.5" />
-        </svg>
-      ),
-    },
-    {
-      title: "Full-Mouth Dental Implants",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 7c1.5 0 2.5.7 3 2l1 3c.2.6.6 1 1.2 1h5.6c.6 0 1-.4 1.2-1l1-3c.5-1.3 1.5-2 3-2" />
-          <path d="M4 7v3M20 7v3" />
-          <path d="M6 14l1 4M18 14l-1 4" />
-          <line x1="9" y1="18" x2="15" y2="18" />
-        </svg>
-      ),
-    },
-    {
-      title: "All-on-6 Full-Mouth Solutions",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 9c.5-2 2-3 4-3 1.5 0 2.5.6 3 1.5.5-.9 1.5-1.5 2-1.5s1.5.6 2 1.5c.5-.9 1.5-1.5 3-1.5 2 0 3.5 1 4 3" />
-          <line x1="6" y1="12" x2="6" y2="16" />
-          <line x1="9.5" y1="12" x2="9.5" y2="16" />
-          <line x1="12" y1="12" x2="12" y2="16" />
-          <line x1="14.5" y1="12" x2="14.5" y2="16" />
-          <line x1="18" y1="12" x2="18" y2="16" />
-          <path d="M5 18h14" />
-        </svg>
-      ),
-    },
-    {
-      title: "FP-1 Full-Arch Restorations",
-      icon: (
-        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 8c2-2 6-3 9-3s7 1 9 3" />
-          <rect x="5" y="10" width="3" height="5" rx="0.5" />
-          <rect x="10.5" y="10" width="3" height="5" rx="0.5" />
-          <rect x="16" y="10" width="3" height="5" rx="0.5" />
-          <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
-      ),
-    },
+  const services: React.ReactNode[] = [
+    "Dental Implants (Yomi Robotic Implant Surgery)",
+    (
+      <a key="all-on-6" href="https://nobledentalcares.com/our-services/all-on-4-and-all-on-6" className="inline-link">
+        All-on-6 Full Mouth Dental Implants
+      </a>
+    ),
+    (
+      <a key="fp-1" href="https://nobledentalcares.com/our-services/fp-1-full-arch-dental-implants" className="inline-link">
+        FP-1 Full Arch Dental Implants
+      </a>
+    ),
+    "Full and Partial Dentures",
+    "Oral Surgery and Tooth Extractions",
+    "Wisdom Tooth Removal",
+    "Bone Grafting",
+    "Cosmetic Dentistry and Smile Makeovers",
+    "Dental Crowns (CEREC Same-Day Crowns)",
+    "Teeth Whitening and Veneers",
+    "Invisalign and Orthodontics",
+    "Periodontics and Gum Disease Treatment",
+    "Root Canal Therapy",
+    "Preventive Cleanings and Exams",
+    "Sedation Dentistry",
+    "Emergency Dental Care",
   ];
   return (
     <section className="section section-alt" id="implant-options">
       <div className="container">
         <div className="section-header reveal">
-          <span className="section-label">Implant Solutions</span>
-          <h2>Dental Implant Options for Missing Teeth</h2>
+          <span className="section-label">Our Services</span>
+          <h2>Comprehensive Dental Services in Fremont, CA</h2>
           <div className="gold-bar" />
           <p>
-            Dental implants are designed to replace missing teeth by supporting crowns, bridges, dentures, or full-mouth
-            restorations. For patients missing one tooth, multiple teeth, or a full arch, Noble Dental Care can evaluate
-            which implant solution may be appropriate based on bone health, bite function, smile goals, and overall oral
-            condition.
+            Noble Dental Care provides a full spectrum of dental treatments for patients across Fremont, Union City,
+            Newark, and the greater East Bay. Whether you need routine preventive care or a complete smile restoration,
+            our team delivers personalized, technology-driven solutions under one roof. From your first visit to your
+            final result, every treatment plan is built around your oral health, comfort, and long-term goals.
           </p>
         </div>
-        <div className="implant-options-grid">
-          {cards.map(({ title, icon }, i) => (
-            <div key={title} className={`implant-card reveal delay-${(i % 3) + 1}`}>
-              <div className="implant-icon">{icon}</div>
-              <h4>{title}</h4>
-            </div>
-          ))}
+        <div className="cta-group reveal" style={{ justifyContent: "center", marginBottom: "2.5rem" }}>
+          <a
+            href="https://bookit.dentrixascend.com/soe/new/dental?pid=ASC64000000021387&mode=externalLink"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Request a Consultation
+          </a>
         </div>
-        <p className="reveal">
-          For patients considering a complete smile restoration, visit{" "}
-          <a href="https://nobledentalcares.com/our-services/all-on-4-and-all-on-6" className="inline-link">
-            All-on-6 full mouth dental implants
-          </a>
-          . For general implant education, visit{" "}
-          <a href="https://nobledentalcares.com/our-services/dental-implants" className="inline-link">
-            dental implants
-          </a>
-          .
+        <p className="reveal" style={{ textAlign: "center", maxWidth: 820, margin: "0 auto 1.5rem" }}>
+          Our Fremont-area patients have access to a comprehensive range of general, cosmetic, restorative, and surgical
+          dental services, including:
         </p>
-        <div className="cta-group reveal">
-          <a href="https://nobledentalcares.com/our-services/dental-implants" className="btn btn-primary">
-            Explore Implant Options
+        <ul className="services-list reveal">
+          {services.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+        <div className="cta-group reveal" style={{ justifyContent: "center", marginTop: "2.5rem" }}>
+          <a href="https://nobledentalcares.com/contacts" className="btn btn-primary">
+            Contact Us
           </a>
         </div>
       </div>
