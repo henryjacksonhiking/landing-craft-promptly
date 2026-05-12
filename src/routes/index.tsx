@@ -422,23 +422,15 @@ function ImplantOptions() {
             final result, every treatment plan is built around your oral health, comfort, and long-term goals.
           </p>
         </div>
-        <div className="cta-group reveal" style={{ justifyContent: "center", marginBottom: "2.5rem" }}>
-          <a
-            href="https://bookit.dentrixascend.com/soe/new/dental?pid=ASC64000000021387&mode=externalLink"
-            className="btn btn-primary"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Request a Consultation
-          </a>
-        </div>
-        <p className="reveal" style={{ textAlign: "center", maxWidth: 820, margin: "0 auto 1.5rem" }}>
+        <p className="reveal" style={{ textAlign: "center", maxWidth: 820, margin: "0 auto 2rem" }}>
           Our Fremont-area patients have access to a comprehensive range of general, cosmetic, restorative, and surgical
           dental services, including:
         </p>
         <ul className="services-list reveal">
           {services.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i} style={{ animationDelay: `${i * 60}ms` }}>
+              <span className="services-list-text">{item}</span>
+            </li>
           ))}
         </ul>
         <div className="cta-group reveal" style={{ justifyContent: "center", marginTop: "2.5rem" }}>
