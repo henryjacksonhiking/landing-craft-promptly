@@ -5,12 +5,12 @@ import {
   Bone,
   CalendarDays,
   Check,
+  ChevronUp,
   ChevronRight,
   CircleCheck,
   Clock3,
   HeartHandshake,
   MapPin,
-  Menu,
   MessageCircle,
   Phone,
   ShieldCheck,
@@ -28,6 +28,7 @@ const BOOKING_URL = "https://bookit.dentrixascend.com/soe/new/dental?pid=ASC6400
 const PHONE_URL = "tel:+15104932130";
 const PHONE = "(510) 493-2130";
 const LOGO = "https://nobledentalcares.com/Images/navlogo.webp";
+const FOOTER_LOGO = "https://nobledentalcares.com/Images/logo.webp";
 const PAGE_URL = "https://nobledentalcares.com/locations/hayward-ca/implant-supported-dentures";
 const DIRECTIONS = "https://www.google.com/maps/search/?api=1&query=34603+Alvarado-Niles+Rd%2C+Union+City%2C+CA+94587";
 
@@ -89,7 +90,7 @@ function TrackedLink({ href, children, className, event = "cta_click", location 
   return <a href={href} className={className} onClick={() => track(event, { location, label: typeof children === "string" ? children : "action" })}>{children}</a>;
 }
 
-function Header() {
+function MainSiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -98,18 +99,25 @@ function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   useEffect(() => { document.body.style.overflow = open ? "hidden" : ""; return () => { document.body.style.overflow = ""; }; }, [open]);
-  const links = [["Benefits", "#benefits"], ["Options", "#options"], ["Process", "#process"], ["Dr. Sayeedi", "#doctor"], ["Cost", "#cost"], ["FAQs", "#faq"]];
-  return <header className={`hd-header${scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
-    <div className="hd-container hd-nav">
-      <a href="https://nobledentalcares.com" aria-label="Noble Dental Care home"><img className="hd-logo" src={LOGO} width="200" height="45" alt="Noble Dental Care" /></a>
-      <nav className="hd-links" aria-label="Page navigation">{links.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</nav>
-      <div className="hd-nav-actions">
-        <TrackedLink href={PHONE_URL} className="hd-phone-link" event="phone_click" location="header">{PHONE}</TrackedLink>
-        <TrackedLink href={BOOKING_URL} className="hd-button hd-button--gold" location="header">Book Consultation</TrackedLink>
-        <button type="button" className="hd-menu-button" onClick={() => setOpen(value => !value)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>{open ? <X /> : <Menu />}</button>
+  return <header id="site-header" className={scrolled ? "scrolled" : ""}>
+    <div className="container">
+      <div className="header-inner">
+        <a href="https://nobledentalcares.com" className="header-logo" aria-label="Noble Dental Care"><img src={LOGO} width="200" height="44" alt="Noble Dental Care" /></a>
+        <div className="header-right">
+          <TrackedLink href={PHONE_URL} className="header-phone" event="phone_click" location="header"><Phone />{PHONE}</TrackedLink>
+          <TrackedLink href={BOOKING_URL} className="btn btn-primary header-cta" location="header">Schedule Appointment</TrackedLink>
+          <button type="button" className={`hamburger${open ? " open" : ""}`} onClick={() => setOpen(value => !value)} aria-label="Toggle menu" aria-expanded={open}><span/><span/><span/></button>
+        </div>
       </div>
     </div>
-    <div className={`hd-mobile-menu${open ? " is-open" : ""}`}><nav aria-label="Mobile navigation">{links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}</nav><TrackedLink href={BOOKING_URL} className="hd-button hd-button--gold" location="mobile_menu">Book My Implant Consultation</TrackedLink></div>
+    <div className={`mobile-menu${open ? " open" : ""}`} role="navigation">
+      <a href={PHONE_URL}>{PHONE}</a>
+      <a href="https://nobledentalcares.com/our-services/dental-implants">Dental Implants</a>
+      <a href="https://nobledentalcares.com/our-services/yomi-robotic-implant-surgery">Yomi Robotic Surgery</a>
+      <a href="https://nobledentalcares.com/our-services/all-on-4-and-all-on-6">All-on-6</a>
+      <a href="https://nobledentalcares.com/about-us">About Dr. Sayeedi</a>
+      <TrackedLink href={BOOKING_URL} className="btn btn-primary" location="mobile_menu">Schedule Appointment</TrackedLink>
+    </div>
   </header>;
 }
 
@@ -159,8 +167,25 @@ function RevealObserver() {
   return null;
 }
 
+function PageMotion() {
+  const [progress, setProgress] = useState(0);
+  const [showTop, setShowTop] = useState(false);
+  useEffect(() => {
+    const onScroll = () => {
+      const available = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(available > 0 ? (window.scrollY / available) * 100 : 0);
+      setShowTop(window.scrollY > 650);
+      document.documentElement.style.setProperty("--hd-scroll", `${Math.min(window.scrollY * .035, 24)}px`);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return <><div className="hd-progress" style={{ width: `${progress}%` }} aria-hidden="true"/><button className={`hd-back-top${showTop ? " is-visible" : ""}`} type="button" aria-label="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><ChevronUp /></button></>;
+}
+
 function Hero() {
-  return <><section className="hd-hero" aria-labelledby="hayward-title"><img className="hd-hero-photo" src={teamImg} width="1800" height="1000" alt="The Noble Dental Care team at the Union City practice" /><div className="hd-container hd-hero-grid"><div className="hd-hero-copy"><div className="hd-eyebrow">Implant Supported Dentures for Hayward Patients</div><h1 id="hayward-title">Secure Implant Supported Dentures Near Hayward CA</h1><p>Replace loose, uncomfortable dentures with a steadier smile designed around the way you eat, speak, and live. Dr. Syed Z. Sayeedi provides personalized implant denture care for Hayward patients at Noble Dental Care&apos;s nearby Union City office.</p><div className="hd-actions"><TrackedLink href={BOOKING_URL} className="hd-button hd-button--gold" location="hero">Book My Implant Consultation <ArrowRight /></TrackedLink><TrackedLink href={PHONE_URL} className="hd-button hd-button--outline-light" event="phone_click" location="hero"><Phone /> Call {PHONE}</TrackedLink></div></div><ConsultationForm /></div></section><div className="hd-trust"><div className="hd-container hd-trust-grid"><div className="hd-trust-item"><span className="hd-icon-disc"><MapPin /></span>Serving Hayward from nearby Union City</div><div className="hd-trust-item"><span className="hd-icon-disc"><HeartHandshake /></span>Implant dentistry led by Dr. Sayeedi</div><div className="hd-trust-item"><span className="hd-icon-disc"><Zap /></span>Digital planning with Yomi guidance for appropriate cases</div></div></div></>;
+  return <><section className="hd-hero" aria-labelledby="hayward-title"><img className="hd-hero-photo" src={teamImg} width="1800" height="1000" alt="The Noble Dental Care team at the Union City practice" /><div className="hd-container hd-hero-grid"><div className="hd-hero-copy"><div className="hd-eyebrow hd-hero-enter hd-hero-enter--1">Implant Supported Dentures for Hayward Patients</div><h1 className="hd-hero-enter hd-hero-enter--2" id="hayward-title">Secure Implant Supported Dentures Near Hayward CA</h1><p className="hd-hero-enter hd-hero-enter--3">Replace loose, uncomfortable dentures with a steadier smile designed around the way you eat, speak, and live. Dr. Syed Z. Sayeedi provides personalized implant denture care for Hayward patients at Noble Dental Care&apos;s nearby Union City office.</p><div className="hd-actions hd-hero-enter hd-hero-enter--4"><TrackedLink href={BOOKING_URL} className="hd-button hd-button--gold" location="hero">Book My Implant Consultation <ArrowRight /></TrackedLink><TrackedLink href={PHONE_URL} className="hd-button hd-button--outline-light" event="phone_click" location="hero"><Phone /> Call {PHONE}</TrackedLink></div></div><div className="hd-hero-form-enter"><ConsultationForm /></div></div></section><div className="hd-trust"><div className="hd-container hd-trust-grid"><div className="hd-trust-item hd-trust-enter"><span className="hd-icon-disc"><MapPin /></span>Serving Hayward from nearby Union City</div><div className="hd-trust-item hd-trust-enter"><span className="hd-icon-disc"><HeartHandshake /></span>Implant dentistry led by Dr. Sayeedi</div><div className="hd-trust-item hd-trust-enter"><span className="hd-icon-disc"><Zap /></span>Digital planning with Yomi guidance for appropriate cases</div></div></div></>;
 }
 
 function Definition() {
@@ -175,7 +200,7 @@ const benefits = [
 ];
 
 function Benefits() {
-  return <section id="benefits" className="hd-section hd-section--mist" aria-labelledby="benefits-title"><div className="hd-container"><div className="hd-section-head hd-reveal"><div><div className="hd-eyebrow">More Confidence in Daily Life</div><h2 id="benefits-title">When Traditional Dentures No Longer Feel Secure</h2></div><p>A denture that shifts can change how you choose food, speak in a group, or smile for a photo. Implant support can reduce movement and create a more dependable foundation. Your consultation focuses on practical improvements that matter to you.</p></div><div className="hd-benefit-grid">{benefits.map(({ icon: Icon, title, text }, index) => <article className={`hd-card hd-reveal${index % 2 ? " hd-reveal-delay" : ""}`} key={title}><span className="hd-icon-disc"><Icon /></span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>;
+  return <section id="benefits" className="hd-section hd-section--mist" aria-labelledby="benefits-title"><div className="hd-container"><div className="hd-section-head hd-reveal"><div><div className="hd-eyebrow">More Confidence in Daily Life</div><h2 id="benefits-title">When Traditional Dentures No Longer Feel Secure</h2></div><p>A denture that shifts can change how you choose food, speak in a group, or smile for a photo. Implant support can reduce movement and create a more dependable foundation. Your consultation focuses on practical improvements that matter to you.</p></div><div className="hd-benefit-grid">{benefits.map(({ icon: Icon, title, text }, index) => <article className="hd-card hd-reveal" style={{ transitionDelay: `${index * 85}ms` }} key={title}><span className="hd-icon-disc"><Icon /></span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>;
 }
 
 const options = [
@@ -195,7 +220,7 @@ const steps = [
 ];
 
 function Process() {
-  return <section id="process" className="hd-section hd-section--ink" aria-labelledby="process-title"><div className="hd-container"><div className="hd-section-head hd-reveal"><div><div className="hd-eyebrow">A Plan Built Around You</div><h2 id="process-title">Your Implant Denture Treatment Journey</h2></div><p>Every plan begins with a detailed assessment. Timing varies according to your health, anatomy, supporting procedures, and healing.</p></div><div className="hd-timeline">{steps.map(([number, title, text]) => <article className="hd-step hd-reveal" key={number}><div className="hd-step-number">{number}</div><h3>{title}</h3><p>{text}</p></article>)}</div><p className="hd-process-note hd-reveal">Extractions, bone grafting, medical factors, and how the implants heal can affect the schedule. Read Noble Dental Care&apos;s <a href="https://nobledentalcares.com/blog/the-implant-denture-procedure">implant denture procedure guide</a> for a closer look at the stages.</p></div></section>;
+  return <section id="process" className="hd-section hd-section--ink" aria-labelledby="process-title"><div className="hd-container"><div className="hd-section-head hd-reveal"><div><div className="hd-eyebrow">A Plan Built Around You</div><h2 id="process-title">Your Implant Denture Treatment Journey</h2></div><p>Every plan begins with a detailed assessment. Timing varies according to your health, anatomy, supporting procedures, and healing.</p></div><div className="hd-timeline">{steps.map(([number, title, text], index) => <article className="hd-step hd-reveal" style={{ transitionDelay: `${index * 110}ms` }} key={number}><div className="hd-step-number">{number}</div><h3>{title}</h3><p>{text}</p></article>)}</div><p className="hd-process-note hd-reveal">Extractions, bone grafting, medical factors, and how the implants heal can affect the schedule. Read Noble Dental Care&apos;s <a href="https://nobledentalcares.com/blog/the-implant-denture-procedure">implant denture procedure guide</a> for a closer look at the stages.</p></div></section>;
 }
 
 function Doctor() {
@@ -225,8 +250,13 @@ function FinalCTA() {
   return <section className="hd-final" aria-labelledby="final-title"><div className="hd-container"><div className="hd-final-panel hd-reveal"><div><div className="hd-eyebrow">Take the Next Step</div><h2 id="final-title">Find Out Whether Implant Dentures Fit Your Smile</h2><p>A focused consultation can give you clear answers about stability, timing, maintenance, and cost. Request a visit with Dr. Sayeedi and get a plan based on your mouth, health, and goals.</p></div><div className="hd-final-actions"><TrackedLink href={BOOKING_URL} className="hd-button hd-button--gold" location="final">View Available Appointments <CalendarDays /></TrackedLink><TrackedLink href={PHONE_URL} className="hd-button hd-button--outline-light" event="phone_click" location="final"><Phone /> Call {PHONE}</TrackedLink></div></div></div></section>;
 }
 
-function Footer() {
-  return <footer className="hd-footer"><div className="hd-container hd-footer-grid"><div><img className="hd-footer-logo" src={LOGO} width="210" height="48" loading="lazy" alt="Noble Dental Care"/><p>Personalized implant dentistry for Hayward patients at 34603 Alvarado-Niles Rd, Union City, CA 94587.</p><p>Clinical content and treatment suitability should be confirmed during an in-person examination.</p></div><nav className="hd-footer-links" aria-label="Footer navigation"><a href="https://nobledentalcares.com/locations">Locations</a><a href="https://nobledentalcares.com/locations/hayward-ca">Hayward</a><a href="https://nobledentalcares.com/contacts">Contact</a><a href="https://nobledentalcares.com/privacy-policy">Privacy</a></nav></div></footer>;
+function MainSiteFooter() {
+  const columns: [string, [string, string][]][] = [
+    ["Our Services", [["Dental Implants", "https://nobledentalcares.com/our-services/dental-implants"], ["Yomi Robotic Surgery", "https://nobledentalcares.com/our-services/yomi-robotic-implant-surgery"], ["All-on-6 Implants", "https://nobledentalcares.com/our-services/all-on-4-and-all-on-6"], ["FP-1 Full Arch", "https://nobledentalcares.com/our-services/fp-1-full-arch-dental-implants"], ["Oral Surgery", "https://nobledentalcares.com/our-services/oral-surgery"]]],
+    ["Areas We Serve", [["Hayward Dentist", "https://nobledentalcares.com/hayward-dentist"], ["Newark Dentist", "https://nobledentalcares.com/newark-dentist"], ["Fremont Dentist", "https://nobledentalcares.com/"], ["Union City Dentist", "https://nobledentalcares.com/"], ["Robotic Implants Newark", "https://nobledentalcares.com/robotic-dental-implants-in-newark"]]],
+    ["About Us", [["About Noble Dental Care", "https://nobledentalcares.com/about-us"], ["Meet the Doctors", "https://nobledentalcares.com/meet-the-doctor"], ["Insurance & Financing", "https://nobledentalcares.com/insurance-and-financing"], ["Contact Us", "https://nobledentalcares.com/contacts"], ["Dental Blog", "https://nobledentalcares.com/blog"]]],
+  ];
+  return <footer id="site-footer"><div className="container"><div className="footer-grid"><div><img src={FOOTER_LOGO} alt="Noble Dental Care" className="footer-logo" width="200" height="48" loading="lazy"/><p className="footer-about">Noble Dental Care offers advanced dental implant solutions, Yomi robotic surgery, and comprehensive dental care for patients in Fremont, Union City, Newark, Hayward, and the wider Tri-City area.</p><div className="footer-contact-item"><MapPin/><span>34603 Alvarado-Niles Rd, Union City, CA 94587</span></div><div className="footer-contact-item"><Phone/><a href={PHONE_URL}>{PHONE}</a></div><div className="social-links"><a href="https://www.facebook.com/people/Noble-Dental-Care/100083606354159/" target="_blank" rel="noopener" className="social-link" aria-label="Facebook">f</a><a href="https://www.instagram.com/nobledentalcare_" target="_blank" rel="noopener" className="social-link" aria-label="Instagram">◎</a><a href="https://www.youtube.com/@NobleDentalCare" target="_blank" rel="noopener" className="social-link" aria-label="YouTube">▶</a><a href="https://www.linkedin.com/company/noble-dental-care/" target="_blank" rel="noopener" className="social-link" aria-label="LinkedIn">in</a></div></div>{columns.map(([title, links]) => <div key={title}><p className="footer-col-title">{title}</p><ul className="footer-links">{links.map(([label, href]) => <li key={label}><a href={href}>{label}</a></li>)}</ul>{title === "About Us" && <div className="footer-book"><TrackedLink href={BOOKING_URL} className="btn btn-primary" location="footer">Book Appointment</TrackedLink></div>}</div>)}</div><div className="footer-bottom"><p>&copy; 2025 Noble Dental Care. All rights reserved. 34603 Alvarado-Niles Rd, Union City, CA 94587.</p><p>Serving Fremont, Union City, Newark, Hayward &amp; the Tri-City Area</p></div></div></footer>;
 }
 
 function MobileBar() {
@@ -234,5 +264,5 @@ function MobileBar() {
 }
 
 function HaywardImplantDenturesPage() {
-  return <div className="hayward-page"><RevealObserver/><a className="hd-skip" href="#main-content">Skip to main content</a><Header/><main id="main-content"><Hero/><Definition/><Benefits/><Options/><Process/><Doctor/><Candidacy/><Cost/><FAQ/><Location/><FinalCTA/></main><Footer/><MobileBar/></div>;
+  return <div className="hayward-page"><RevealObserver/><PageMotion/><a className="hd-skip" href="#main-content">Skip to main content</a><MainSiteHeader/><main id="main-content"><Hero/><Definition/><Benefits/><Options/><Process/><Doctor/><Candidacy/><Cost/><FAQ/><Location/><FinalCTA/></main><MainSiteFooter/><MobileBar/></div>;
 }
