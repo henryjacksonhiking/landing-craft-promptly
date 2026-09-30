@@ -148,6 +148,7 @@
 .hd-check { display: flex; gap: 14px; align-items: flex-start; font-weight: 650; }
 .hd-check .hd-icon-disc { width: 32px; height: 32px; flex-basis: 32px; background: var(--hd-gold); }
 .hd-cost-panel { max-width: 900px; margin: 0 auto; text-align: center; }
+.hd-eyebrow--center { justify-content: center; }
 .hd-cost-panel p { color: #d5e1df; margin-top: 18px; }
 .hd-cost-panel a { color: var(--hd-gold); font-weight: 750; }
 
@@ -164,6 +165,7 @@
 .hd-contact-row svg { width: 20px; height: 20px; flex: 0 0 20px; color: var(--hd-teal); margin-top: 4px; }
 .hd-hours { margin-top: 26px; border-top: 1px solid var(--hd-line); padding-top: 20px; display: grid; gap: 8px; }
 .hd-hours div { display: flex; justify-content: space-between; gap: 20px; font-size: .88rem; }
+.hd-hours-note { margin-top: 20px !important; font-size: .82rem; color: #62757a; }
 .hd-map { min-height: 440px; border-radius: 16px; border: 1px solid rgba(255,255,255,.15); display: grid; place-items: center; text-align: center; padding: 45px; background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); }
 .hd-map-mark { width: 90px; height: 90px; border: 1px solid rgba(243,185,95,.45); border-radius: 50%; display: grid; place-items: center; color: var(--hd-gold); margin-bottom: 25px; }
 .hd-map-mark svg { width: 38px; height: 38px; }
