@@ -213,6 +213,11 @@
 .hayward-page #site-header .header-phone { color: var(--gold-light); }
 .hayward-page #site-footer { padding-bottom: 100px; }
 .hayward-page #site-footer h3, .hayward-page #site-footer p { font-family: "Work Sans", system-ui, sans-serif; }
+.hayward-page #site-footer .footer-links a,
+.hayward-page #site-footer .footer-contact-item a,
+.hayward-page #site-footer .footer-contact-item span { color: rgba(255,255,255,.62); }
+.hayward-page #site-footer .footer-links a:hover,
+.hayward-page #site-footer .footer-contact-item a:hover { color: var(--gold-light); }
 .hayward-page .footer-book { margin-top: 24px; }
 .hayward-page .footer-book .btn { font-size: .8rem; padding: 12px 22px; }
 .hayward-page .social-link { color: rgba(255,255,255,.68); font-size: .78rem; font-weight: 800; text-decoration: none; }
