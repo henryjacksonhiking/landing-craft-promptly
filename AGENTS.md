@@ -1,0 +1,1 @@
+- Keep the Hayward implant-dentures landing page route-scoped in `hayward-implant.css` so its new visual system does not alter the established homepage.
