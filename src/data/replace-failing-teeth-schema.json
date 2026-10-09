@@ -1,0 +1,215 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://nobledentalcares.com/#website",
+      "url": "https://nobledentalcares.com/",
+      "name": "Noble Dental Care"
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#webpage",
+      "url": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca",
+      "name": "Replace Failing Teeth Hayward CA | Noble Dental Care",
+      "description": "Explore Hayward tooth replacement options with Dr. Sayeedi. Compare implants, bridges, full-arch care, treatment timing, and financing.",
+      "isPartOf": {
+        "@id": "https://nobledentalcares.com/#website"
+      },
+      "about": {
+        "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#service"
+      },
+      "breadcrumb": {
+        "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "reviewedBy": {
+        "@id": "https://nobledentalcares.com/meet-the-doctor#person"
+      },
+      "lastReviewed": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "[data-speakable]"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#service",
+      "name": "Failing Teeth Evaluation and Replacement for Hayward Patients",
+      "serviceType": "Evaluation and replacement of failing teeth",
+      "description": "Explore Hayward tooth replacement options with Dr. Sayeedi. Compare implants, bridges, full-arch care, treatment timing, and financing.",
+      "provider": {
+        "@id": "https://nobledentalcares.com/#dentist"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Hayward",
+        "addressRegion": "CA"
+      },
+      "url": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca"
+    },
+    {
+      "@type": "Dentist",
+      "@id": "https://nobledentalcares.com/#dentist",
+      "name": "Noble Dental Care",
+      "url": "https://nobledentalcares.com/",
+      "telephone": "+1-510-493-2130",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "34603 Alvarado-Niles Rd",
+        "addressLocality": "Union City",
+        "addressRegion": "CA",
+        "postalCode": "94587",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Union City"
+        },
+        {
+          "@type": "City",
+          "name": "Hayward"
+        }
+      ],
+      "employee": {
+        "@id": "https://nobledentalcares.com/meet-the-doctor#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nobledentalcares.com/meet-the-doctor#person",
+      "name": "Syed Z. Sayeedi",
+      "honorificSuffix": "DDS",
+      "jobTitle": "Dentist",
+      "url": "https://nobledentalcares.com/meet-the-doctor",
+      "worksFor": {
+        "@id": "https://nobledentalcares.com/#dentist"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nobledentalcares.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://nobledentalcares.com/locations"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hayward",
+          "item": "https://nobledentalcares.com/locations/hayward-ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Replace Failing Teeth Hayward CA",
+          "item": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://landing-craft-promptly.lovable.app/replace-failing-teeth-hayward-ca#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if a tooth is failing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A tooth may have a poor outlook when it has a deep crack, extensive decay, repeated infection, severe mobility, major bone loss, or too little healthy structure to restore. Symptoms alone cannot determine the prognosis, so an examination and imaging are important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can badly damaged teeth still be saved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some can. A crown, root canal treatment, periodontal care, or another restorative approach may be reasonable when the tooth has enough healthy structure and support. Dr. Sayeedi will explain which teeth appear maintainable and why."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I replace a tooth in Hayward?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single implant and crown, a dental bridge, or a removable option may be considered. The best choice depends on the neighboring teeth, bone, gum health, smile position, timing, health history, and budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if several of my teeth are failing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Several failing teeth may be treated with individual implants, an implant-supported bridge, a tooth-supported bridge, or a partial denture. A coordinated plan can help avoid treating each tooth in isolation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is All-on-X considered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All-on-X may be considered when most or all teeth in an arch are missing or have a poor long-term outlook. The implant number and positions are selected after reviewing bone, anatomy, bite, restorative needs, health, and maintenance ability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can extractions and implants be completed at the same visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They can be in selected cases. Infection, available bone, implant stability, anatomy, and the restorative plan determine whether immediate implant placement is appropriate or whether staged treatment is safer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I have temporary teeth during treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most plans include a temporary strategy, but the design varies. It may be a temporary fixed tooth, a temporary bridge, a removable appliance, or temporary full-arch teeth. The choice depends on the treatment and healing requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does dental insurance cover replacement of failing teeth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coverage depends on the plan and the procedure. Insurance may contribute to examinations, extractions, grafting, bridges, dentures, or parts of implant treatment. The team can review available benefits after the treatment plan is prepared."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Noble Dental Care located in Hayward?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noble Dental Care serves Hayward patients from its nearby office at 34603 Alvarado-Niles Road in Union City, California. Call (510) 493-2130 to confirm current hours and plan your visit."
+          }
+        }
+      ]
+    }
+  ]
+}
