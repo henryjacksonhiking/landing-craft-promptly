@@ -11,10 +11,10 @@ export function ImageReveal({ children, className = "" }: { children: ReactNode;
   return <m.div className={className} initial={false} whileInView={{ clipPath: "inset(0 0 0 0)", opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduced ? 0 : 1 }}>{children}</m.div>;
 }
 export function DrawLine({ vertical = false }: { vertical?: boolean }) {
-  const ref = useRef<HTMLDivElement>(null); const reduced = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start 85%", "end 35%"] });
   const progress = useSpring(scrollYProgress, { stiffness: 90, damping: 25 });
-  return <div ref={ref} className={`rft-draw-track${vertical ? " rft-draw-track--vertical" : ""}`} aria-hidden="true"><m.div style={vertical ? { scaleY: reduced ? 1 : progress } : { scaleX: reduced ? 1 : progress }} /></div>;
+  return <div ref={ref} className={`rft-draw-track${vertical ? " rft-draw-track--vertical" : ""}`} aria-hidden="true"><m.div style={vertical ? { scaleY: progress } : { scaleX: progress }} /></div>;
 }
 export function CountUp() {
   const ref = useRef<HTMLSpanElement>(null); const inView = useInView(ref, { once: true }); const reduced = useReducedMotion(); const [count, setCount] = useState(0); const years = new Date().getUTCFullYear() - 2001;
