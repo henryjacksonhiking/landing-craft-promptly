@@ -1,1 +1,6 @@
 - Keep the Hayward implant-dentures landing page route-scoped in `hayward-implant.css` so its new visual system does not alter the established homepage.
+- Keep the All-on-X variation at its own TanStack route with `all-on-x.css` linked only in that route's head; its prefixed tokens and selectors prevent changes to existing pages.
+- Keep All-on-X exact copy and schema in dedicated data modules, deriving visible FAQ from the supplied schema so answers remain identical.
+- Reuse the established branded header/footer markup in the All-on-X chrome module without modifying the original page modules; existing global chrome styles remain authoritative.
+- Keep All-on-X consultation inputs in React state with explicitly labeled preview-only validation until a real submission destination exists; use the practice scheduler as the working appointment path.
+- Use the shared Button component and LazyMotion-based isolated motion helpers for All-on-X controls and effects; honor reduced motion and render all clinical copy synchronously for SSR.
