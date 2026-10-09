@@ -4,3 +4,9 @@
 - [x] Verify desktop/mobile flows, reduced motion, resources, and errors.
 - [x] Record architecture and ongoing brand/office requirements.
 - [ ] Real saved requests and notifications: blocked until Lovable Cloud is enabled from the main project chat.
+
+# Replace failing teeth variation
+- [ ] Build the separate route using the JSON/Word copy and full design brief, preserving existing pages.
+- [ ] Reuse branded chrome, shared controls, motion, scheduler, and clearly labeled consultation preview.
+- [ ] Add page-specific metadata, schema-derived FAQ, sitemap and AI-readable summary.
+- [ ] Verify desktop/mobile interactions, reduced motion, no overflow, errors, and existing-page isolation.
