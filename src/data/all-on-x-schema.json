@@ -1,0 +1,277 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://nobledentalcares.com/#website",
+      "url": "https://nobledentalcares.com/",
+      "name": "Noble Dental Care"
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#webpage",
+      "url": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca",
+      "name": "All-on-X Dental Implants Hayward, CA | Noble Dental Care",
+      "description": "Fixed full-arch All-on-X implants for Hayward patients. Dr. Syed Sayeedi plans every case with 3D imaging in nearby Union City. Book a consultation.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://nobledentalcares.com/#website"
+      },
+      "about": {
+        "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#service"
+      },
+      "breadcrumb": {
+        "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#breadcrumb"
+      },
+      "reviewedBy": {
+        "@id": "https://nobledentalcares.com/meet-the-doctor#person"
+      },
+      "lastReviewed": "2026-10-09",
+      "dateModified": "2026-10-09",
+      "audience": {
+        "@type": "PeopleAudience",
+        "geographicArea": {
+          "@type": "City",
+          "name": "Hayward",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          }
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "[data-speakable]"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#service",
+      "name": "All-on-X Dental Implants for Hayward Patients",
+      "alternateName": [
+        "Full-arch dental implants",
+        "All-on-4 dental implants",
+        "All-on-6 dental implants"
+      ],
+      "serviceType": "Full-arch dental implant treatment",
+      "description": "All-on-X is a fixed, full-arch dental implant treatment. A custom bridge of replacement teeth attaches to a number of implants, often four to six, chosen for your jaw. At Noble Dental Care in Union City, Dr. Syed Z. Sayeedi plans each case with 3D imaging for patients from Hayward and across the East Bay.",
+      "provider": {
+        "@id": "https://nobledentalcares.com/#dentist"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Hayward",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "California"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Union City"
+        }
+      ],
+      "url": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca"
+    },
+    {
+      "@type": "Dentist",
+      "@id": "https://nobledentalcares.com/#dentist",
+      "name": "Noble Dental Care",
+      "url": "https://nobledentalcares.com/",
+      "telephone": "+1-510-493-2130",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "34603 Alvarado-Niles Rd",
+        "addressLocality": "Union City",
+        "addressRegion": "CA",
+        "postalCode": "94587",
+        "addressCountry": "US"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=34603+Alvarado-Niles+Rd+Union+City+CA+94587",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Union City"
+        },
+        {
+          "@type": "City",
+          "name": "Hayward"
+        },
+        {
+          "@type": "City",
+          "name": "Fremont"
+        },
+        {
+          "@type": "City",
+          "name": "Newark"
+        }
+      ],
+      "employee": {
+        "@id": "https://nobledentalcares.com/meet-the-doctor#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nobledentalcares.com/meet-the-doctor#person",
+      "name": "Syed Z. Sayeedi",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "DDS",
+      "jobTitle": "Dentist",
+      "url": "https://nobledentalcares.com/meet-the-doctor",
+      "worksFor": {
+        "@id": "https://nobledentalcares.com/#dentist"
+      },
+      "knowsAbout": [
+        "Dental implants",
+        "All-on-X full-arch restoration",
+        "Implant dentistry",
+        "Yomi robotic implant guidance"
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "American Dental Association"
+        },
+        {
+          "@type": "Organization",
+          "name": "California Dental Association"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nobledentalcares.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dental Implants",
+          "item": "https://nobledentalcares.com/our-services/all-on-4-and-all-on-6"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "All-on-X Dental Implants Hayward CA",
+          "item": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://landing-craft-promptly.lovable.app/all-on-x-dental-implants-hayward-ca#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does the X mean in All-on-X?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The X is the number of implants selected for your full-arch restoration. Dr. Sayeedi chooses it after reviewing your bone, anatomy, bite forces, restorative design, and long-term maintenance needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is All-on-X the same as All-on-4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All-on-4 is one type of full-arch treatment that uses four implants. All-on-X is the broader approach, because your plan may use four, six, or another appropriate number of implants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get All-on-X teeth in one day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some patients receive fixed temporary teeth on the day their implants are placed. Eligibility depends on implant stability, bone quality, health, bite, and the surgical plan. Your final teeth are usually completed after healing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I need bone grafting before All-on-X?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always. 3D imaging shows whether your existing bone can support the planned implants or whether grafting or another approach should be considered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are All-on-X teeth removable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by you. The restoration is designed to stay fixed in place, and only your dental team removes it when needed. You'll still clean around and beneath it every day with the tools we recommend."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does All-on-X treatment take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The surgical visit may take one day, but the full process commonly takes several months. Extractions, grafting, healing, temporary teeth, and final restoration design can all affect the schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do All-on-X implants last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With daily home care and regular professional maintenance, dental implants can serve for many years. The bridge itself may need adjustment, repair, or replacement over time, which we'll discuss in your plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer sedation for All-on-X surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noble Dental Care offers sedation dentistry. Dr. Sayeedi will review which sedation options suit your health and your treatment plan at your consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I eat after All-on-X surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients follow a soft or modified diet during early healing. Dr. Sayeedi gives you instructions based on implant stability, your temporary teeth, and your recovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I clean a fixed full-arch restoration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Daily care usually includes brushing plus cleaning beneath the bridge with floss threaders, interdental brushes, or a water flosser, depending on your design. Regular professional maintenance is essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Noble Dental Care located in Hayward?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our office is in nearby Union City, at 34603 Alvarado-Niles Road, a short drive south of Hayward. Call (510) 493-2130 to confirm hours and plan your visit."
+          }
+        }
+      ]
+    }
+  ]
+}

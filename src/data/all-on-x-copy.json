@@ -1,0 +1,266 @@
+{
+  "Office details (use everywhere)": {},
+  "Hero": {
+    "Eyebrow": "Full-Arch Dental Implants \u00b7 Serving Hayward, CA",
+    "H1": "All-on-X Dental Implants Near Hayward, CA",
+    "Lead": "Replace failing teeth or a loose denture with a fixed, natural-looking smile, planned around your bone, bite, and goals by Dr. Syed Z. Sayeedi at our Union City office, a short drive south of Hayward.",
+    "Quick points": [
+      "Upper arch, lower arch, or both in one plan",
+      "Fixed teeth that stay in, with no adhesive",
+      "3D planning and Yomi robotic guidance when appropriate",
+      "Temporary teeth on surgery day for qualified patients"
+    ],
+    "Primary CTA": "Book My All-on-X Consultation \u2192 #book",
+    "Secondary CTA": "Call (510) 493-2130 \u2192 tel:+15104932130",
+    "Micro proof": "Insurance accepted \u00b7 Financing available \u00b7 Practicing since 2001",
+    "Form": [
+      "title: Request Your Consultation",
+      "subtitle: Three quick details. Our team will call to confirm your time.",
+      "fields:\n    - Full name\n    - Mobile phone\n    - Best time for your visit",
+      "button: Request My Consultation",
+      "alt_link: Prefer to pick a time now? See open appointment times",
+      "fine_print: By submitting, you agree Noble Dental Care may call or text you about your appointment. Please don't include health details here.",
+      "success_title: Thank you. Your request is in.",
+      "success_body: We'll call you shortly to confirm your consultation. Need us sooner? Call (510) 493-2130."
+    ],
+    "Visual": "Authentic wide photo of Dr. Sayeedi reviewing a 3D implant scan with a patient (consented). Floating glass badge on the photo: 'Planned in 3D \u00b7 Placed with precision'. Second floating badge: 'Since 2001'."
+  },
+  "At a glance": {
+    "Eyebrow": "The Short Answer",
+    "H2": "All-on-X at a Glance",
+    "Answer": "All-on-X is a fixed, full-arch dental implant treatment. A custom bridge of replacement teeth attaches to a number of implants, often four to six, chosen for your jaw. At Noble Dental Care in Union City, Dr. Syed Z. Sayeedi plans each case with 3D imaging for patients from Hayward and across the East Bay.",
+    "Facts": [
+      "**Replaces:** Most or all teeth in the upper jaw, lower jaw, or both",
+      "**Implants per arch:** Commonly four to six, set by your anatomy (that's the X)",
+      "**Teeth on surgery day:** Fixed temporary teeth for qualified patients",
+      "**Full timeline:** Usually several months, including healing and final teeth",
+      "**Removable at home?:** No. Your dental team removes it for professional care",
+      "**Cost:** Personalized after your exam, with insurance and financing reviewed",
+      "**Where:** 34603 Alvarado-Niles Rd, Union City, a short drive from Hayward"
+    ]
+  },
+  "Trust marquee": {
+    "Items": [
+      "Practicing since 2001",
+      "Fellowship in Implantology",
+      "Yomi robotic guidance",
+      "3D digital implant planning",
+      "ADA and CDA member",
+      "Insurance and financing options"
+    ]
+  },
+  "Fit check": {
+    "Eyebrow": "Start With Your Situation",
+    "H2": "Does This Sound Familiar?",
+    "Intro": "Most people exploring All-on-X aren't missing just one tooth. They're tired of a problem that shapes every meal, every smile, and every photo.",
+    "Items": [
+      "Several of my teeth are loose, broken, or failing",
+      "My denture slips, rubs, or needs adhesive",
+      "I avoid foods I used to enjoy",
+      "I keep fixing one tooth at a time with no end in sight",
+      "I want teeth that stay in, day and night",
+      "I want to understand fixed options before I decide"
+    ],
+    "Feedback": [
+      "0: Tap anything that applies to you.",
+      "1-2: A consultation can show whether a full-arch plan or a simpler option fits you best.",
+      "3+: Several of these together often point to a full-arch evaluation. Let's look at your options."
+    ],
+    "CTA": "Check My Candidacy \u2192 #book",
+    "Disclaimer": "This checklist isn't a diagnosis. Only an exam and 3D imaging can confirm candidacy."
+  },
+  "What is All-on-X": {
+    "Eyebrow": "A Full Arch, Built in Layers",
+    "H2": "What Is All-on-X?",
+    "Body": [
+      "All-on-X replaces most or all teeth in one or both jaws with a custom bridge that attaches to dental implants. Unlike a denture that rests on your gums, it's designed to stay secure while you talk, laugh, and eat.",
+      "The X is the number of implants. Instead of fitting everyone to a four-implant or six-implant formula, Dr. Sayeedi selects the number and position your bone, bite, and smile actually need."
+    ],
+    "Layers": [
+      "**Smile:** Your new teeth are designed for bite, speech, lip support, and a natural look.",
+      "**Connection:** Precision components link the implants to your new teeth and share biting forces.",
+      "**Foundation:** Implants are placed in your jawbone in positions mapped from your 3D scan."
+    ],
+    "External link": "American Dental Association overview of dental implants \u2192 https://www.mouthhealthy.org/all-topics-a-z/implants"
+  },
+  "Compare": {
+    "Eyebrow": "Compare the Main Paths",
+    "H2": "All-on-4, All-on-6, or All-on-X: What's the Difference?",
+    "Intro": "More implants aren't automatically better, and fewer aren't automatically simpler. The right design depends on your bone, arch shape, bite forces, materials, and how easily you can keep it clean.",
+    "Cards": [
+      "**All-on-4** (4 implants per arch) \u00b7 Best for: Arches where four well-placed implants give enough support \u00b7 How it's planned: Angled back implants can make good use of available bone \u00b7 Key question: Can four implants handle the forces on this arch?",
+      "**All-on-X** (Personalized count) \u00b7 Best for: Anyone who wants a plan built on their anatomy, not a preset number \u00b7 How it's planned: Count, angles, and positions are chosen after 3D imaging and smile design \u00b7 Key question: Which design gives you the safest, most maintainable result?",
+      "**All-on-6** (6 implants per arch) \u00b7 Best for: Patients with enough bone to benefit from two extra support points \u00b7 How it's planned: Extra implants spread support, but need adequate bone and space \u00b7 Key question: Would two more implants make this plan stronger?"
+    ],
+    "Links": [
+      "Read our All-on-4 vs. All-on-6 comparison \u2192 https://nobledentalcares.com/blog/all-on-four-vs-all-on-six-which-is-a-better-dental-implant",
+      "Explore our full-arch implant service \u2192 https://nobledentalcares.com/our-services/all-on-4-and-all-on-6",
+      "Dental implants for Hayward patients \u2192 https://nobledentalcares.com/dental-implants-hayward-ca *(publish only if live)*"
+    ]
+  },
+  "Benefits": {
+    "Eyebrow": "Designed Around Daily Life",
+    "H2": "What Patients Want From All-on-X",
+    "Intro": "The goal isn't just to fill spaces. It's to fix the everyday moments that brought you here.",
+    "Items": [
+      "**Chew with confidence:** Implant support can feel far steadier than a loose removable denture.",
+      "**Teeth that stay put:** Your new teeth are fixed to implants, so nothing comes out at night.",
+      "**A smile designed for you:** Shape, shade, smile line, lip support, bite, and speech are planned together.",
+      "**An end to patchwork repairs:** Replace a group of failing teeth instead of fixing them one at a time.",
+      "**No more adhesive:** Fixed implant teeth don't rely on denture paste to stay in place.",
+      "**One coordinated plan:** Imaging, surgery, temporary teeth, final teeth, and maintenance follow one path."
+    ],
+    "Qualifier": "Results, comfort, food choices, and treatment time vary by patient. Full function develops through healing, bite adjustments, and ongoing care."
+  },
+  "Roadmap": {
+    "Eyebrow": "See the Whole Path",
+    "H2": "Your All-on-X Treatment Roadmap",
+    "Steps": [
+      "**01. Listen and examine:** Dr. Sayeedi learns what isn't working and reviews your health history, teeth or denture, gums, bite, and goals.",
+      "**02. Scan and design:** 3D imaging maps your bone and anatomy, and implant positions are planned around your future teeth.",
+      "**03. Review your plan:** You'll see your recommended implant count, any extractions or grafting, temporary teeth, materials, timeline, and estimated fees.",
+      "**04. Place implants:** Implants are placed following your digital plan, with Yomi robotic guidance when clinically appropriate.",
+      "**05. Wear temporary teeth:** Qualified patients may receive fixed temporary teeth during the surgical phase. Others use a different temporary option while healing.",
+      "**06. Final teeth and care:** After healing, your final teeth are refined for fit, bite, appearance, and easy cleaning. Regular maintenance protects your result."
+    ],
+    "CTA": "Start Step 1: Book My Consultation \u2192 #book"
+  },
+  "Same-day teeth": {
+    "Eyebrow": "A Straight Answer on Same-Day Teeth",
+    "H2": "Can You Leave With Teeth the Same Day?",
+    "Short answer": "Possibly, if you qualify.",
+    "Body": [
+      "\"Same-day teeth\" usually means a fixed temporary bridge attached right after your implants are placed. It isn't your final set of teeth, and it doesn't skip healing.",
+      "Whether you qualify depends on implant stability, bone quality, the number and position of implants, bite forces, and your health. If those conditions aren't met, protecting your implants while they heal comes first."
+    ],
+    "Pairs": [
+      "**Everyone leaves with teeth on surgery day.:** Same-day eligibility is a clinical decision made for your case, not a promise in an ad.",
+      "**Same-day teeth are the final teeth.:** Temporary teeth protect and function during healing. Your final teeth are crafted after your gums and implants heal.",
+      "**Once the teeth are in, recovery is done.:** A soft-food period and follow-up visits are still an important part of healing."
+    ]
+  },
+  "Candidacy": {
+    "Eyebrow": "Your Health Guides the Decision",
+    "H2": "Who Is a Good Candidate for All-on-X Near Hayward?",
+    "Intro": "Adults with extensive tooth loss, a failing arch, or an unstable denture may be candidates. Age alone doesn't decide it. Healing, bone, gums, bite, medical history, and your ability to care for the restoration matter more.",
+    "Good signs": [
+      "Most or all teeth in one arch are missing or have a poor long-term outlook",
+      "Gum disease and any infection can be brought under control",
+      "There's enough bone for the planned design, or supporting treatment is possible",
+      "Medical conditions are stable enough for surgery and healing",
+      "You're ready for daily cleaning and regular professional maintenance"
+    ],
+    "Closer look": [
+      "Uncontrolled diabetes or another condition that affects healing",
+      "Smoking, vaping, or other tobacco use",
+      "Active gum disease or untreated infection",
+      "Severe clenching or grinding",
+      "Medications or health history that may affect bone or surgery"
+    ],
+    "Closing": "These factors don't always rule out treatment, but they can change the plan, timing, risks, or the best alternative.",
+    "CTA": "Find Out If I Qualify \u2192 #book"
+  },
+  "Doctor": {
+    "Eyebrow": "Planning Led by Experience",
+    "H2": "Meet Dr. Syed Z. Sayeedi, DDS",
+    "Body": [
+      "Dr. Sayeedi has practiced dentistry since 2001 and holds a Fellowship in Implantology. In a full-arch case, he plans more than the implants: surgery, temporary teeth, bite, final restoration, cleaning access, and long-term follow-up all have to work together.",
+      "Noble Dental Care uses 3D imaging and offers Yomi robotic guidance for appropriate implant cases. Technology helps carry out a digital plan precisely, but it doesn't replace clinical judgment. Dr. Sayeedi's exam determines whether All-on-X, All-on-6, FP-1, an implant denture, or another approach fits you best."
+    ],
+    "Stats": [
+      "**Since 2001:** Practicing dentistry",
+      "**Fellowship:** Training in implantology",
+      "**ADA + CDA:** Professional memberships"
+    ],
+    "Tech rail": [
+      "3D imaging (CBCT)",
+      "Digital implant planning",
+      "Yomi robotic guidance",
+      "Sedation options"
+    ],
+    "CTA": "Meet Dr. Sayeedi \u2192 https://nobledentalcares.com/meet-the-doctor"
+  },
+  "Proof (hidden until verified)": {
+    "Eyebrow": "Real Patients, Real Results",
+    "H2": "Hear From Noble Dental Care Patients",
+    "Modules": [
+      "rating_badge: Show only a verified Google rating and review count, with the source link. Never placeholder numbers.",
+      "video: Patient video testimonial. The practice already publishes 'Amy's Story' on its All-on-4 and All-on-6 page; reuse only if consent covers this page.",
+      "reviews: Verified review excerpts only: first name and last initial, star rating, source, and date.",
+      "before_after: Consent-cleared Noble Dental Care cases only, captioned 'Actual patient. Individual results vary.'"
+    ]
+  },
+  "Cost, insurance, and financing": {
+    "Eyebrow": "Understand the Investment",
+    "H2": "How Much Do All-on-X Implants Cost?",
+    "Body": [
+      "There's no honest one-price-fits-all quote for All-on-X. Your total depends on how many arches and implants you need, imaging, extractions, grafting, sedation, temporary teeth, final materials, lab work, and the complexity of your case.",
+      "Noble Dental Care accepts many dental insurance plans and offers third-party financing. Implant coverage varies, so once your plan is ready, our team walks you through your benefits, estimated fees, and payment options before you commit."
+    ],
+    "Factors": [
+      "One arch or two",
+      "Number and type of implants",
+      "Extractions and bone grafting",
+      "Temporary teeth design",
+      "Final restoration material",
+      "Sedation and surgical complexity",
+      "Follow-up and maintenance"
+    ],
+    "Insurance title": "Insurance Plans We Accept",
+    "Insurance": [
+      "Aetna PPO",
+      "Ameritas",
+      "Anthem",
+      "Blue Cross Blue Shield",
+      "Cigna",
+      "Dental Care USA",
+      "Denti-Cal",
+      "Guardian",
+      "Humana",
+      "MetLife",
+      "Principal",
+      "UnitedHealthcare"
+    ],
+    "Insurance note": "Don't see your plan? Call us. Implant coverage varies by plan, and we'll help you check yours.",
+    "Financing title": "Flexible Financing",
+    "Financing body": "Third-party financing can spread your treatment into monthly payments. We'll review options with you after your plan is ready.",
+    "Offer": "Hidden by default. Show only a current, practice-approved offer with full terms.",
+    "CTAs": [
+      "Get My Personalized Estimate \u2192 #book",
+      "Review Insurance and Financing \u2192 https://nobledentalcares.com/insurance-and-financing"
+    ]
+  },
+  "FAQ": {
+    "Eyebrow": "Straight Answers Before You Decide",
+    "H2": "All-on-X Questions From Hayward Patients\n\n**Q: What does the X mean in All-on-X?**\n\nThe X is the number of implants selected for your full-arch restoration. Dr. Sayeedi chooses it after reviewing your bone, anatomy, bite forces, restorative design, and long-term maintenance needs.\n\n**Q: Is All-on-X the same as All-on-4?**\n\nNo. All-on-4 is one type of full-arch treatment that uses four implants. All-on-X is the broader approach, because your plan may use four, six, or another appropriate number of implants.\n\n**Q: Can I get All-on-X teeth in one day?**\n\nSome patients receive fixed temporary teeth on the day their implants are placed. Eligibility depends on implant stability, bone quality, health, bite, and the surgical plan. Your final teeth are usually completed after healing.\n\n**Q: Will I need bone grafting before All-on-X?**\n\nNot always. 3D imaging shows whether your existing bone can support the planned implants or whether grafting or another approach should be considered.\n\n**Q: Are All-on-X teeth removable?**\n\nNot by you. The restoration is designed to stay fixed in place, and only your dental team removes it when needed. You'll still clean around and beneath it every day with the tools we recommend.\n\n**Q: How long does All-on-X treatment take?**\n\nThe surgical visit may take one day, but the full process commonly takes several months. Extractions, grafting, healing, temporary teeth, and final restoration design can all affect the schedule.\n\n**Q: How long do All-on-X implants last?**\n\nWith daily home care and regular professional maintenance, dental implants can serve for many years. The bridge itself may need adjustment, repair, or replacement over time, which we'll discuss in your plan.\n\n**Q: Do you offer sedation for All-on-X surgery?**\n\nNoble Dental Care offers sedation dentistry. Dr. Sayeedi will review which sedation options suit your health and your treatment plan at your consultation.\n\n**Q: What can I eat after All-on-X surgery?**\n\nMost patients follow a soft or modified diet during early healing. Dr. Sayeedi gives you instructions based on implant stability, your temporary teeth, and your recovery.\n\n**Q: How do I clean a fixed full-arch restoration?**\n\nDaily care usually includes brushing plus cleaning beneath the bridge with floss threaders, interdental brushes, or a water flosser, depending on your design. Regular professional maintenance is essential.\n\n**Q: Is Noble Dental Care located in Hayward?**\n\nOur office is in nearby Union City, at 34603 Alvarado-Niles Road, a short drive south of Hayward. Call (510) 493-2130 to confirm hours and plan your visit."
+  },
+  "Final CTA and location": {
+    "Eyebrow": "Full-Arch Care Near Hayward",
+    "H2": "Take the First Step Toward a Smile That Stays Put",
+    "Body": "All-on-X is a major health and financial decision. One focused consultation replaces online guesswork with a clear view of your bone, teeth, gums, options, timeline, and investment.",
+    "Trust points": [
+      "Convenient Union City office serving Hayward and the East Bay",
+      "Implant planning led by Dr. Sayeedi",
+      "Options based on your exam, not a preset package",
+      "Insurance review and financing options"
+    ],
+    "Route": "Hayward \u2192 Union City \u00b7 Noble Dental Care",
+    "Nearby": "Also welcoming patients from Union City, Fremont, and Newark.",
+    "CTAs": [
+      "Book My All-on-X Consultation \u2192 #book",
+      "Call (510) 493-2130 \u2192 tel:+15104932130",
+      "Get Directions \u2192 https://www.google.com/maps/search/?api=1&query=34603+Alvarado-Niles+Rd+Union+City+CA+94587"
+    ]
+  },
+  "Sticky mobile bar": {
+    "Items": [
+      "Call \u2192 tel:+15104932130",
+      "Book Consultation \u2192 #book"
+    ]
+  },
+  "Footer": {
+    "Review line": "Medically reviewed by Syed Z. Sayeedi, DDS \u00b7 Last updated {publish date}",
+    "Disclaimer": "This page is for general education and isn't a substitute for an exam. Treatment options, timing, and results vary by patient.",
+    "Nap": "Noble Dental Care \u00b7 34603 Alvarado-Niles Rd, Union City, CA 94587 \u00b7 (510) 493-2130\n\n\n---"
+  }
+}
