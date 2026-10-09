@@ -6,7 +6,7 @@
 - [ ] Real saved requests and notifications: blocked until Lovable Cloud is enabled from the main project chat.
 
 # Replace failing teeth variation
-- [ ] Build the separate route using the JSON/Word copy and full design brief, preserving existing pages.
-- [ ] Reuse branded chrome, shared controls, motion, scheduler, and clearly labeled consultation preview.
-- [ ] Add page-specific metadata, schema-derived FAQ, sitemap and AI-readable summary.
-- [ ] Verify desktop/mobile interactions, reduced motion, no overflow, errors, and existing-page isolation.
+- [x] Build the separate route using the JSON/Word copy and full design brief, preserving existing pages.
+- [x] Reuse branded chrome, shared controls, motion, scheduler, and clearly labeled consultation preview.
+- [x] Add page-specific metadata, schema-derived FAQ, sitemap and AI-readable summary.
+- [x] Verify desktop/mobile interactions, reduced motion, no overflow, errors, and existing-page isolation.
