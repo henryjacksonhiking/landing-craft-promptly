@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AllOnXDentalImplantsHaywardCaRouteImport } from './routes/all-on-x-dental-implants-hayward-ca'
+import { Route as ReplaceFailingTeethHaywardCaRouteImport } from './routes/replace-failing-teeth-hayward-ca'
 import { Route as LocationsHaywardCaImplantSupportedDenturesRouteImport } from './routes/locations.hayward-ca.implant-supported-dentures'
 
 const IndexRoute = IndexRouteImport.update({
@@ -24,6 +25,12 @@ const AllOnXDentalImplantsHaywardCaRoute =
     path: '/all-on-x-dental-implants-hayward-ca',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ReplaceFailingTeethHaywardCaRoute =
+  ReplaceFailingTeethHaywardCaRouteImport.update({
+    id: '/replace-failing-teeth-hayward-ca',
+    path: '/replace-failing-teeth-hayward-ca',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LocationsHaywardCaImplantSupportedDenturesRoute =
   LocationsHaywardCaImplantSupportedDenturesRouteImport.update({
     id: '/locations/hayward-ca/implant-supported-dentures',
@@ -34,17 +41,20 @@ const LocationsHaywardCaImplantSupportedDenturesRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRouteTypes {
@@ -52,22 +62,26 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca'
     | '/locations/hayward-ca/implant-supported-dentures'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca'
     | '/locations/hayward-ca/implant-supported-dentures'
   id:
     | '__root__'
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca'
     | '/locations/hayward-ca/implant-supported-dentures'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AllOnXDentalImplantsHaywardCaRoute: typeof AllOnXDentalImplantsHaywardCaRoute
+  ReplaceFailingTeethHaywardCaRoute: typeof ReplaceFailingTeethHaywardCaRoute
   LocationsHaywardCaImplantSupportedDenturesRoute: typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 
@@ -87,6 +101,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AllOnXDentalImplantsHaywardCaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/replace-failing-teeth-hayward-ca': {
+      id: '/replace-failing-teeth-hayward-ca'
+      path: '/replace-failing-teeth-hayward-ca'
+      fullPath: '/replace-failing-teeth-hayward-ca'
+      preLoaderRoute: typeof ReplaceFailingTeethHaywardCaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations/hayward-ca/implant-supported-dentures': {
       id: '/locations/hayward-ca/implant-supported-dentures'
       path: '/locations/hayward-ca/implant-supported-dentures'
@@ -100,6 +121,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AllOnXDentalImplantsHaywardCaRoute: AllOnXDentalImplantsHaywardCaRoute,
+  ReplaceFailingTeethHaywardCaRoute: ReplaceFailingTeethHaywardCaRoute,
   LocationsHaywardCaImplantSupportedDenturesRoute:
     LocationsHaywardCaImplantSupportedDenturesRoute,
 }
