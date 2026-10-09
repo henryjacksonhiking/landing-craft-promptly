@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://landing-craft-promptly.lovable.app/sitemap.xml
