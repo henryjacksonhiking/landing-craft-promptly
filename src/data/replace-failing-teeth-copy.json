@@ -52,8 +52,46 @@
     ],
     "proof_controls": "Use only verified reviews, ratings, prices, offers, patient photos, and insurer information. Hide any module that lacks approved content."
   },
-  "content_sections": [
+  "internal_links": [
     {
+      "anchor": "All-on-X dental implants near Hayward",
+      "url": "https://nobledentalcares.com/all-on-x-dental-implants-hayward-ca",
+      "status": "planned sibling URL, verify before publication"
+    },
+    {
+      "anchor": "implant denture procedure guide",
+      "url": "https://nobledentalcares.com/blog/the-implant-denture-procedure",
+      "status": "verified Noble Dental Care blog URL"
+    },
+    {
+      "anchor": "Meet Dr. Sayeedi",
+      "url": "https://nobledentalcares.com/meet-the-doctor",
+      "status": "verified live"
+    },
+    {
+      "anchor": "Review Insurance and Financing",
+      "url": "https://nobledentalcares.com/insurance-and-financing",
+      "status": "verified live"
+    }
+  ],
+  "external_links": [
+    {
+      "anchor": "American Dental Association overview of dental implants",
+      "url": "https://www.mouthhealthy.org/all-topics-a-z/implants",
+      "status": "verified live educational source"
+    }
+  ],
+  "implementation_notes": [
+    "Noble Dental Care is physically located in Union City and serves Hayward. Do not imply that the office is in Hayward.",
+    "Verify the planned All-on-X Hayward sibling URL before publication.",
+    "Use authentic practice photography and documented patient consent for identifiable or before-and-after images.",
+    "Do not imply that every failing tooth needs extraction or that same-day implants are available for every patient.",
+    "Confirm office hours, insurance language, financing vendors, prices, and offers immediately before launch.",
+    "FAQ schema must match the visible FAQ wording exactly.",
+    "Have Dr. Sayeedi review the clinical language before publication."
+  ],
+  "sections": {
+    "hero": {
       "id": "hero",
       "component": "editorial_split_hero_with_triage_form",
       "eyebrow": "Thoughtful Tooth Replacement Near Hayward",
@@ -83,7 +121,7 @@
       "form_button": "Request My Consultation",
       "visual_direction": "Use a real photo of Dr. Sayeedi reviewing an X-ray or three-dimensional scan with a patient. Pair it with a compact three-field consultation form and the three decision chips."
     },
-    {
+    "urgent_signs": {
       "id": "urgent_signs",
       "component": "warning_sign_card_grid",
       "eyebrow": "Know When to Act",
@@ -117,7 +155,7 @@
       ],
       "urgent_note": "Call the office for guidance if you have dental pain or swelling. Seek emergency medical care for trouble breathing or swallowing, rapidly spreading facial swelling, uncontrolled bleeding, or major facial trauma."
     },
-    {
+    "decision_framework": {
       "id": "decision_framework",
       "component": "preserve_repair_replace_decision_board",
       "eyebrow": "Diagnosis Before Extraction",
@@ -145,7 +183,7 @@
       ],
       "closing": "A consultation does not commit you to extraction. It should give you a clear prognosis for each important tooth and a reason for every recommendation."
     },
-    {
+    "scope_selector": {
       "id": "scope_selector",
       "component": "one_several_full_arch_selector",
       "eyebrow": "Match the Treatment to the Problem",
@@ -191,7 +229,7 @@
         "url": "https://www.mouthhealthy.org/all-topics-a-z/implants"
       }
     },
-    {
+    "delay": {
       "id": "delay",
       "component": "consequence_timeline",
       "eyebrow": "Why Timing Matters",
@@ -221,7 +259,7 @@
       ],
       "qualification": "Not every delayed tooth develops the same problems. An examination and imaging are the only reliable ways to understand your current risk."
     },
-    {
+    "care_path": {
       "id": "care_path",
       "component": "numbered_care_path",
       "eyebrow": "A Plan You Can Follow",
@@ -263,7 +301,7 @@
         "url": "https://nobledentalcares.com/blog/the-implant-denture-procedure"
       }
     },
-    {
+    "same_day": {
       "id": "same_day",
       "component": "question_answer_split_panel",
       "eyebrow": "Timing Without Guesswork",
@@ -279,7 +317,7 @@
         "Healing and follow-up remain essential"
       ]
     },
-    {
+    "doctor": {
       "id": "doctor",
       "component": "doctor_story_with_technology_sidebar",
       "eyebrow": "Experience for Complex Decisions",
@@ -299,7 +337,7 @@
         "url": "https://nobledentalcares.com/meet-the-doctor"
       }
     },
-    {
+    "cost": {
       "id": "cost",
       "component": "cost_breakdown_with_payment_path",
       "eyebrow": "Plan the Clinical and Financial Details Together",
@@ -321,7 +359,7 @@
         "url": "https://nobledentalcares.com/insurance-and-financing"
       }
     },
-    {
+    "faq": {
       "id": "faq",
       "component": "single_column_faq_accordion",
       "eyebrow": "Questions Hayward Patients Often Ask",
@@ -365,7 +403,7 @@
         }
       ]
     },
-    {
+    "local_cta": {
       "id": "local_cta",
       "component": "full_width_local_conversion_band",
       "eyebrow": "A Nearby Office for Hayward Patients",
@@ -393,43 +431,5 @@
         "url": "tel:+15104932130"
       }
     }
-  ],
-  "internal_links": [
-    {
-      "anchor": "All-on-X dental implants near Hayward",
-      "url": "https://nobledentalcares.com/all-on-x-dental-implants-hayward-ca",
-      "status": "planned sibling URL, verify before publication"
-    },
-    {
-      "anchor": "implant denture procedure guide",
-      "url": "https://nobledentalcares.com/blog/the-implant-denture-procedure",
-      "status": "verified Noble Dental Care blog URL"
-    },
-    {
-      "anchor": "Meet Dr. Sayeedi",
-      "url": "https://nobledentalcares.com/meet-the-doctor",
-      "status": "verified live"
-    },
-    {
-      "anchor": "Review Insurance and Financing",
-      "url": "https://nobledentalcares.com/insurance-and-financing",
-      "status": "verified live"
-    }
-  ],
-  "external_links": [
-    {
-      "anchor": "American Dental Association overview of dental implants",
-      "url": "https://www.mouthhealthy.org/all-topics-a-z/implants",
-      "status": "verified live educational source"
-    }
-  ],
-  "implementation_notes": [
-    "Noble Dental Care is physically located in Union City and serves Hayward. Do not imply that the office is in Hayward.",
-    "Verify the planned All-on-X Hayward sibling URL before publication.",
-    "Use authentic practice photography and documented patient consent for identifiable or before-and-after images.",
-    "Do not imply that every failing tooth needs extraction or that same-day implants are available for every patient.",
-    "Confirm office hours, insurance language, financing vendors, prices, and offers immediately before launch.",
-    "FAQ schema must match the visible FAQ wording exactly.",
-    "Have Dr. Sayeedi review the clinical language before publication."
-  ]
+  }
 }
