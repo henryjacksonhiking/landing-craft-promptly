@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { track } from "@/config/all-on-x-booking";
 const BOOKING_URL = "https://bookit.dentrixascend.com/soe/new/dental?pid=ASC64000000021387&mode=externalLink";
 const PHONE_URL = "tel:+15104932130";
 const PHONE = "(510) 493-2130";
 const LOGO = "https://nobledentalcares.com/Images/navlogo.webp";
 const FOOTER_LOGO = "https://nobledentalcares.com/Images/logo.webp";
-function TrackedLink({href, children, className}: {href:string; children:React.ReactNode; className?:string; event?:string; location?:string}) { return <a href={href} className={className}>{children}</a>; }
+function TrackedLink({href, children, className, location="chrome"}: {href:string; children:React.ReactNode; className?:string; event?:string; location?:string}) { return <a href={href} className={className} onClick={()=>track(href.startsWith("tel:")?"call_click":"cta_click",{section:location,label:href.startsWith("tel:")?"Call":"Schedule Appointment"})}>{children}</a>; }
 export function MainSiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -16,6 +17,16 @@ export function MainSiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   useEffect(() => { document.body.style.overflow = open ? "hidden" : ""; return () => { document.body.style.overflow = ""; }; }, [open]);
+  useEffect(() => {
+    if (!open) return;
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setOpen(false);
+      document.querySelector<HTMLButtonElement>("#site-header .hamburger")?.focus();
+    };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, [open]);
   return <header id="site-header" className={scrolled ? "scrolled" : ""}>
     <div className="container">
       <div className="header-inner">
@@ -23,11 +34,11 @@ export function MainSiteHeader() {
         <div className="header-right">
           <TrackedLink href={PHONE_URL} className="header-phone" event="phone_click" location="header"><Phone />{PHONE}</TrackedLink>
           <TrackedLink href={BOOKING_URL} className="btn btn-primary header-cta" location="header">Schedule Appointment</TrackedLink>
-          <Button variant="ghost" type="button" className={`hamburger${open ? " open" : ""}`} onClick={() => setOpen(value => !value)} aria-label="Toggle menu" aria-expanded={open}><span/><span/><span/></Button>
+          <Button variant="ghost" type="button" className={`hamburger${open ? " open" : ""}`} onClick={() => setOpen(value => !value)} aria-label="Toggle menu" aria-expanded={open} aria-controls="ax-site-menu"><span/><span/><span/></Button>
         </div>
       </div>
     </div>
-    <div className={`mobile-menu${open ? " open" : ""}`} role="navigation">
+    <div id="ax-site-menu" className={`mobile-menu${open ? " open" : ""}`} role="navigation" aria-label="Noble Dental Care website">
       <a href={PHONE_URL}>{PHONE}</a>
       <a href="https://nobledentalcares.com/our-services/dental-implants">Dental Implants</a>
       <a href="https://nobledentalcares.com/our-services/yomi-robotic-implant-surgery">Yomi Robotic Surgery</a>
