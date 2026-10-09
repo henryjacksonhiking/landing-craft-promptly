@@ -30,3 +30,18 @@ export function BackToTop() {
   if (!show) return null;
   return <Button className="rft-back-top" variant="outline" size="icon" aria-label="Back to top" title="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" })}><svg viewBox="0 0 48 48" aria-hidden="true"><m.circle cx="24" cy="24" r="21" style={{ pathLength: scrollYProgress }}/></svg><ArrowUp/></Button>;
 }
+export function PointerEffects() {
+  const reduced=useReducedMotion();
+  useEffect(()=>{
+    if(reduced || !window.matchMedia("(pointer: fine) and (min-width: 1025px)").matches)return;
+    const move=(event:PointerEvent)=>{
+      const target=event.target instanceof Element?event.target.closest<HTMLElement>(".rft-signal article, .rft-button"):null;
+      if(!target)return;const rect=target.getBoundingClientRect();const x=(event.clientX-rect.left)/rect.width-.5;const y=(event.clientY-rect.top)/rect.height-.5;
+      target.style.transform=target.matches("article")?`perspective(900px) rotateX(${-y*6}deg) rotateY(${x*6}deg) translateY(-4px)`:`translate(${x*6}px, ${y*6}px)`;
+    };
+    const leave=(event:PointerEvent)=>{const target=event.target instanceof Element?event.target.closest<HTMLElement>(".rft-signal article, .rft-button"):null;const related=event.relatedTarget instanceof Node?event.relatedTarget:null;if(target&&!target.contains(related))target.style.transform="";};
+    document.addEventListener("pointermove",move);document.addEventListener("pointerout",leave);
+    return()=>{document.removeEventListener("pointermove",move);document.removeEventListener("pointerout",leave);document.querySelectorAll<HTMLElement>(".rft-signal article, .rft-button").forEach(el=>{el.style.transform="";});};
+  },[reduced]);
+  return null;
+}

@@ -6,7 +6,7 @@ import { Drawer, DrawerContent, DrawerTitle, DrawerDescription, DrawerClose } fr
 import { MainSiteHeader, MainSiteFooter } from "@/components/all-on-x/main-site-chrome";
 import { MotionProvider, ScrollProgress } from "@/components/all-on-x/motion";
 import { BookAction, CallAction, PreviewForm } from "@/components/replace-failing-teeth/controls";
-import { MaskText, RotatingBadge, BackToTop } from "@/components/replace-failing-teeth/motion";
+import { MaskText, RotatingBadge, BackToTop, PointerEffects } from "@/components/replace-failing-teeth/motion";
 import { AtGlance, WarningSigns, DecisionBoard, ScopeSelector, DelayTimeline, CarePath, SameDay, Doctor, Cost, FAQ, Visit } from "@/components/replace-failing-teeth/sections";
 import { copy, extras, metadata, schema, PAGE_URL } from "@/data/replace-failing-teeth";
 import heroPhoto from "@/assets/replace-failing-teeth-hayward-dr-sayeedi-1000.webp";

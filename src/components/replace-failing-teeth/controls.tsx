@@ -5,7 +5,7 @@ import { Consultation } from "@/components/all-on-x/consultation";
 import { booking, track } from "@/config/all-on-x-booking";
 export type OnBook = () => void;
 export function BookAction({ onBook, label="Request My Failing Teeth Consultation", section="page" }: { onBook: OnBook; label?: string; section?: string }) {
-  return <Button className="rft-button rft-button-slide" onClick={() => { track("cta_click", { label, section }); onBook(); }}><span>{label}</span><ArrowRight/></Button>;
+  return <Button className="rft-button rft-button-slide" onClick={() => { track("cta_click", { label, section }); onBook(); }}><span className="rft-button-label"><span>{label}</span><span aria-hidden="true">{label}</span></span><ArrowRight/></Button>;
 }
 export function CallAction({ section="page", short=false }: { section?: string; short?: boolean }) {
   return <Button asChild variant="outline" className="rft-button rft-button--outline"><a href={booking.phoneUrl} onClick={() => track("call_click", { section })}><Phone/>{short ? "Call" : `Call ${booking.phone}`}</a></Button>;
