@@ -826,6 +826,7 @@ function Footer() {
     ["Oral Surgery", "https://nobledentalcares.com/our-services/oral-surgery"],
   ];
   const areas: [string, string][] = [
+    ["All Locations", "/dentist-hayward-newark-fremont"],
     ["Hayward Dentist", "https://nobledentalcares.com/hayward-dentist"],
     ["Newark Dentist", "https://nobledentalcares.com/newark-dentist"],
     ["Fremont Dentist", "https://nobledentalcares.com/"],
