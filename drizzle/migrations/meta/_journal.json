@@ -8,6 +8,13 @@
       "when": 1791833756092,
       "tag": "0000_create_failing_teeth_consultations",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791842393279,
+      "tag": "0001_create_location_hub_requests",
+      "breakpoints": true
     }
   ]
 }

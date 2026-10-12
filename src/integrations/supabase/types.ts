@@ -50,6 +50,42 @@ export type Database = {
         }
         Relationships: []
       }
+      location_hub_requests: {
+        Row: {
+          attribution: Json
+          city: string
+          created_at: string
+          full_name: string
+          id: string
+          mobile_phone: string
+          page_path: string
+          reason: string
+          website: string
+        }
+        Insert: {
+          attribution?: Json
+          city: string
+          created_at?: string
+          full_name: string
+          id?: string
+          mobile_phone: string
+          page_path?: string
+          reason: string
+          website?: string
+        }
+        Update: {
+          attribution?: Json
+          city?: string
+          created_at?: string
+          full_name?: string
+          id?: string
+          mobile_phone?: string
+          page_path?: string
+          reason?: string
+          website?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

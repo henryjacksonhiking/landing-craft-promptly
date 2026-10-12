@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AllOnXDentalImplantsHaywardCaRouteImport } from './routes/all-on-x-dental-implants-hayward-ca'
+import { Route as DentistHaywardNewarkFremontRouteImport } from './routes/dentist-hayward-newark-fremont'
 import { Route as ReplaceFailingTeethHaywardCaRouteImport } from './routes/replace-failing-teeth-hayward-ca'
 import { Route as ReplaceFailingTeethHaywardCaOption2RouteImport } from './routes/replace-failing-teeth-hayward-ca-option-2'
 import { Route as LocationsHaywardCaImplantSupportedDenturesRouteImport } from './routes/locations.hayward-ca.implant-supported-dentures'
@@ -24,6 +25,12 @@ const AllOnXDentalImplantsHaywardCaRoute =
   AllOnXDentalImplantsHaywardCaRouteImport.update({
     id: '/all-on-x-dental-implants-hayward-ca',
     path: '/all-on-x-dental-implants-hayward-ca',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DentistHaywardNewarkFremontRoute =
+  DentistHaywardNewarkFremontRouteImport.update({
+    id: '/dentist-hayward-newark-fremont',
+    path: '/dentist-hayward-newark-fremont',
     getParentRoute: () => rootRouteImport,
   } as any)
 const ReplaceFailingTeethHaywardCaRoute =
@@ -48,6 +55,7 @@ const LocationsHaywardCaImplantSupportedDenturesRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/dentist-hayward-newark-fremont': typeof DentistHaywardNewarkFremontRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
@@ -55,6 +63,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/dentist-hayward-newark-fremont': typeof DentistHaywardNewarkFremontRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
@@ -63,6 +72,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
+  '/dentist-hayward-newark-fremont': typeof DentistHaywardNewarkFremontRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
@@ -72,6 +82,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/dentist-hayward-newark-fremont'
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
@@ -79,6 +90,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/dentist-hayward-newark-fremont'
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
@@ -86,6 +98,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
+    | '/dentist-hayward-newark-fremont'
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
@@ -94,6 +107,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AllOnXDentalImplantsHaywardCaRoute: typeof AllOnXDentalImplantsHaywardCaRoute
+  DentistHaywardNewarkFremontRoute: typeof DentistHaywardNewarkFremontRoute
   ReplaceFailingTeethHaywardCaRoute: typeof ReplaceFailingTeethHaywardCaRoute
   ReplaceFailingTeethHaywardCaOption2Route: typeof ReplaceFailingTeethHaywardCaOption2Route
   LocationsHaywardCaImplantSupportedDenturesRoute: typeof LocationsHaywardCaImplantSupportedDenturesRoute
@@ -113,6 +127,13 @@ declare module '@tanstack/react-router' {
       path: '/all-on-x-dental-implants-hayward-ca'
       fullPath: '/all-on-x-dental-implants-hayward-ca'
       preLoaderRoute: typeof AllOnXDentalImplantsHaywardCaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dentist-hayward-newark-fremont': {
+      id: '/dentist-hayward-newark-fremont'
+      path: '/dentist-hayward-newark-fremont'
+      fullPath: '/dentist-hayward-newark-fremont'
+      preLoaderRoute: typeof DentistHaywardNewarkFremontRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/replace-failing-teeth-hayward-ca': {
@@ -142,6 +163,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AllOnXDentalImplantsHaywardCaRoute: AllOnXDentalImplantsHaywardCaRoute,
+  DentistHaywardNewarkFremontRoute: DentistHaywardNewarkFremontRoute,
   ReplaceFailingTeethHaywardCaRoute: ReplaceFailingTeethHaywardCaRoute,
   ReplaceFailingTeethHaywardCaOption2Route:
     ReplaceFailingTeethHaywardCaOption2Route,
