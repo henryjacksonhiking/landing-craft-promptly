@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AllOnXDentalImplantsHaywardCaRouteImport } from './routes/all-on-x-dental-implants-hayward-ca'
 import { Route as ReplaceFailingTeethHaywardCaRouteImport } from './routes/replace-failing-teeth-hayward-ca'
+import { Route as ReplaceFailingTeethHaywardCaOption2RouteImport } from './routes/replace-failing-teeth-hayward-ca-option-2'
 import { Route as LocationsHaywardCaImplantSupportedDenturesRouteImport } from './routes/locations.hayward-ca.implant-supported-dentures'
 
 const IndexRoute = IndexRouteImport.update({
@@ -31,6 +32,12 @@ const ReplaceFailingTeethHaywardCaRoute =
     path: '/replace-failing-teeth-hayward-ca',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ReplaceFailingTeethHaywardCaOption2Route =
+  ReplaceFailingTeethHaywardCaOption2RouteImport.update({
+    id: '/replace-failing-teeth-hayward-ca-option-2',
+    path: '/replace-failing-teeth-hayward-ca-option-2',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LocationsHaywardCaImplantSupportedDenturesRoute =
   LocationsHaywardCaImplantSupportedDenturesRouteImport.update({
     id: '/locations/hayward-ca/implant-supported-dentures',
@@ -42,12 +49,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRoutesById {
@@ -55,6 +64,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/all-on-x-dental-implants-hayward-ca': typeof AllOnXDentalImplantsHaywardCaRoute
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
+  '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 export interface FileRouteTypes {
@@ -63,18 +73,21 @@ export interface FileRouteTypes {
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
     | '/replace-failing-teeth-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
     | '/replace-failing-teeth-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
   id:
     | '__root__'
     | '/'
     | '/all-on-x-dental-implants-hayward-ca'
     | '/replace-failing-teeth-hayward-ca'
+    | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
   fileRoutesById: FileRoutesById
 }
@@ -82,6 +95,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AllOnXDentalImplantsHaywardCaRoute: typeof AllOnXDentalImplantsHaywardCaRoute
   ReplaceFailingTeethHaywardCaRoute: typeof ReplaceFailingTeethHaywardCaRoute
+  ReplaceFailingTeethHaywardCaOption2Route: typeof ReplaceFailingTeethHaywardCaOption2Route
   LocationsHaywardCaImplantSupportedDenturesRoute: typeof LocationsHaywardCaImplantSupportedDenturesRoute
 }
 
@@ -108,6 +122,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReplaceFailingTeethHaywardCaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/replace-failing-teeth-hayward-ca-option-2': {
+      id: '/replace-failing-teeth-hayward-ca-option-2'
+      path: '/replace-failing-teeth-hayward-ca-option-2'
+      fullPath: '/replace-failing-teeth-hayward-ca-option-2'
+      preLoaderRoute: typeof ReplaceFailingTeethHaywardCaOption2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations/hayward-ca/implant-supported-dentures': {
       id: '/locations/hayward-ca/implant-supported-dentures'
       path: '/locations/hayward-ca/implant-supported-dentures'
@@ -122,6 +143,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AllOnXDentalImplantsHaywardCaRoute: AllOnXDentalImplantsHaywardCaRoute,
   ReplaceFailingTeethHaywardCaRoute: ReplaceFailingTeethHaywardCaRoute,
+  ReplaceFailingTeethHaywardCaOption2Route:
+    ReplaceFailingTeethHaywardCaOption2Route,
   LocationsHaywardCaImplantSupportedDenturesRoute:
     LocationsHaywardCaImplantSupportedDenturesRoute,
 }

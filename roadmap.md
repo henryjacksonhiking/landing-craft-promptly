@@ -10,3 +10,10 @@
 - [x] Reuse branded chrome, shared controls, motion, scheduler, and clearly labeled consultation preview.
 - [x] Add page-specific metadata, schema-derived FAQ, sitemap and AI-readable summary.
 - [x] Verify desktop/mobile interactions, reduced motion, no overflow, errors, and existing-page isolation.
+
+# Replace failing teeth second option
+- [x] Create a fresh separate v2 page at /replace-failing-teeth-hayward-ca-option-2 using the new brief and schema without altering existing designs.
+- [x] Add dark-to-light editorial styling, authentic imagery, interactive diagrams and purposeful motion.
+- [x] Verify booking validation and real scheduler, keyboard tabs, all ten exact FAQ answers, 390px mobile layout, reduced motion and page isolation; no runtime errors observed.
+- [x] Add insert-only consultation storage with validation, consent, honeypot, and bounded attribution capture.
+- [ ] Email notifications require a verified sending domain and the practice's notification recipient; no notification sends are claimed.
