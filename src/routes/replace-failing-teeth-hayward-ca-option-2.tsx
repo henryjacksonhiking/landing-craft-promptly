@@ -7,9 +7,9 @@ import { MotionEffects } from '@/components/failing-teeth-v2/motion';
 import { BookButton, CallButton, BookingForm } from '@/components/failing-teeth-v2/booking';
 import { Ribbons, Answer, WarningSigns, Decisions, Scope, Waiting, Plan, SameDay, Doctor, Cost, FAQ, Visit } from '@/components/failing-teeth-v2/sections';
 import { hero, schema, PAGE_URL } from '@/data/failing-teeth-v2';
-import doctor from '@/assets/dr-sayeedi.jpg';
+import doctor from '@/assets/replace-failing-teeth-hayward-dr-sayeedi-1000.webp';
 import pageCss from './failing-teeth-v2.css?url';
-const title='Replace Failing Teeth Near Hayward, CA — A Clear Plan | Noble Dental Care';
+const title='Replace Failing Teeth in Hayward, CA | Noble Dental Care';
 const description='Loose, broken, or infected teeth? Dr. Syed Sayeedi helps Hayward patients save what can be saved and compare implants, bridges, and All-on-X.';
 export const Route=createFileRoute('/replace-failing-teeth-hayward-ca-option-2')({
  head:()=>({meta:[{title},{name:'description',content:description},{property:'og:title',content:title},{property:'og:description',content:description},{property:'og:type',content:'website'},{property:'og:url',content:PAGE_URL},{name:'twitter:card',content:'summary_large_image'},{name:'twitter:title',content:title},{name:'twitter:description',content:description},{name:'geo.region',content:'US-CA'},{name:'geo.placename',content:'Union City'},{name:'robots',content:'index,follow,max-image-preview:large'}],links:[{rel:'canonical',href:PAGE_URL},{rel:'stylesheet',href:pageCss},{rel:'preload',as:'image',href:doctor},{rel:'stylesheet',href:'https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap'}],scripts:[{id:'page-schema',type:'application/ld+json',children:JSON.stringify(schema)}]}),component:Page,

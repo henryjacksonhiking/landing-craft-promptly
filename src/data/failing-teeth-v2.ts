@@ -2,7 +2,8 @@ import schema from './failing-teeth-v2-schema.json';
 export { schema };
 export const PAGE_PATH = '/replace-failing-teeth-hayward-ca-option-2';
 export const PAGE_URL = `https://landing-craft-promptly.lovable.app${PAGE_PATH}`;
-export const faq = schema['@graph'].flatMap(node => node['@type'] === 'FAQPage' ? node.mainEntity ?? [] : []);
+type FAQEntry = { name: string; acceptedAnswer: { text: string } };
+export const faq: FAQEntry[] = schema['@graph'].flatMap(node => node['@type'] === 'FAQPage' && 'mainEntity' in node ? (node.mainEntity ?? []) as FAQEntry[] : []);
 export const hero = {
  lead: "When teeth keep breaking, loosening, or flaring up, every visit can feel like another patch. Dr. Syed Z. Sayeedi looks at your whole mouth, saves the teeth that can be saved, and maps clear replacement options for the rest, at our Union City office a short drive south of Hayward.",
  chips: ['Save what is predictably restorable', "Replace what can't be maintained safely", 'Plan your bite as one connected system'],
