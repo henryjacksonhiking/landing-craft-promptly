@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      failing_teeth_consultations: {
+        Row: {
+          attribution: Json
+          best_time: string
+          consent: boolean
+          created_at: string
+          full_name: string
+          id: string
+          mobile_phone: string
+          page_path: string
+          website: string
+        }
+        Insert: {
+          attribution?: Json
+          best_time: string
+          consent: boolean
+          created_at?: string
+          full_name: string
+          id?: string
+          mobile_phone: string
+          page_path?: string
+          website?: string
+        }
+        Update: {
+          attribution?: Json
+          best_time?: string
+          consent?: boolean
+          created_at?: string
+          full_name?: string
+          id?: string
+          mobile_phone?: string
+          page_path?: string
+          website?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
