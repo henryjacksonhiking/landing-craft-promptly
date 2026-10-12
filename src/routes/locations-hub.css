@@ -144,3 +144,7 @@
 .lh-sticky{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;padding:10px;background:white;box-shadow:0 -6px 20px color-mix(in oklab,var(--lh-navy) 12%,transparent);z-index:40}.lh-sticky a{min-height:48px;display:grid;place-items:center;border-radius:999px;font-weight:700;text-decoration:none;background:var(--lh-mist);color:var(--lh-navy)}.lh-sticky a:last-child{background:var(--lh-teal);color:white}.lh-page{padding-bottom:68px}}
 @media (min-width:721px){.lh-svc{display:block}}
 @media (prefers-reduced-motion:reduce){.lh-page *,.lh-page *::before,.lh-page *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.lh-route,.lh-route-g .lh-pin,.lh-car{opacity:1}.lh-car{display:none}}
+.lh-hero{padding-top:130px}
+.lh-stat strong span{font:inherit;color:inherit}
+.lh-halo{transform-box:fill-box}
+.lh-skyline{opacity:.45;z-index:0}.lh-city-name{z-index:1}
