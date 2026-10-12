@@ -17,3 +17,8 @@
 - [x] Verify booking validation and real scheduler, keyboard tabs, all ten exact FAQ answers, 390px mobile layout, reduced motion and page isolation; no runtime errors observed.
 - [x] Add insert-only consultation storage with validation, consent, honeypot, and bounded attribution capture.
 - [ ] Email notifications require a verified sending domain and the practice's notification recipient; no notification sends are claimed.
+# Locations hub
+- [x] Build /dentist-hayward-newark-fremont hub with city cards and cards for every location page; link it from site menu, footers and sitemap.
+- [x] Save appointment requests to Cloud.
+- [ ] FAQ section and page schema: waiting for the locations-hub-schema.json (Message 2).
+- [ ] Email notifications: need a verified sending domain and recipient.

@@ -7,3 +7,4 @@
 - Keep the failing-teeth variation at its own route with prefixed, head-linked CSS and dedicated copy/schema data; JSON/Word copy takes precedence over differing prose in the design brief.
 - Reuse shared Noble chrome, motion, booking configuration and consultation with optional page/instance/copy props whose defaults preserve All-on-X behavior; this avoids altering existing pages or duplicating form logic.
 - Render failing-teeth FAQ directly from its schema, retain all scope panels synchronously in the DOM, and keep unverified proof/offers hidden; this preserves content parity and server-rendered clinical information.
+- Keep the locations hub at its own route with lh-prefixed, head-linked locations-hub.css and copy in src/data/locations-hub.ts; it links every location page so new location pages must be added to its card list.

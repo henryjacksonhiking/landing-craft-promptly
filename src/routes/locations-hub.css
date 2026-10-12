@@ -148,3 +148,4 @@
 .lh-stat strong span{font:inherit;color:inherit}
 .lh-halo{transform-box:fill-box}
 .lh-skyline{opacity:.45;z-index:0}.lh-city-name{z-index:1}
+@media (max-width:720px){.lh-hero{padding-top:104px}}
