@@ -829,7 +829,7 @@ function Footer() {
   ];
   const areas: [string, string][] = [
     ["All Locations", "/dentist-hayward-newark-fremont"],
-    ["Hayward Dentist", "https://nobledentalcares.com/hayward-dentist"],
+    ["Hayward Dentist", "/locations/hayward-ca"],
     ["Newark Dentist", "https://nobledentalcares.com/newark-dentist"],
     ["Fremont Dentist", "https://nobledentalcares.com/"],
     ["Union City Dentist", "https://nobledentalcares.com/"],
