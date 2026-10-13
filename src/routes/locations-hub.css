@@ -19,7 +19,7 @@
 .lh-text-link{display:inline-flex;align-items:center;gap:4px;color:var(--lh-teal);font-weight:600}.lh-text-link svg{width:16px;height:16px}.lh-gold-link{color:var(--lh-gold)}
 /* hero */
 .lh-hero{position:relative;padding:56px 0 40px;background:linear-gradient(180deg,var(--lh-mist),var(--lh-ivory))}
-.lh-contours{position:absolute;inset:0;opacity:.5;background:repeating-radial-gradient(ellipse at 80% 30%,transparent 0 38px,color-mix(in oklab,var(--lh-teal) 12%,transparent) 39px 40px);animation:lh-drift 30s linear infinite alternate}
+.lh-contours{position:absolute;inset:0;opacity:.1;background:repeating-radial-gradient(ellipse at 80% 30%,transparent 0 38px,color-mix(in oklab,var(--lh-teal) 12%,transparent) 39px 40px);animation:lh-drift 30s linear infinite alternate}
 @keyframes lh-drift{to{transform:translate3d(-30px,20px,0)}}
 .lh-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .lh-crumb{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--lh-muted);margin-bottom:16px}.lh-crumb a{color:var(--lh-teal)}.lh-crumb svg{width:14px}
