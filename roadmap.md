@@ -2,7 +2,9 @@
 - [x] Create separate /locations/hayward-ca/ page with branded imagery, structured cards, accessible animation and working booking links.
 - [x] Connect it to the locations hub and add back links from existing Hayward pages.
 - [x] Verify six screen widths, keyboard FAQ controls, form preview, live internal destinations and metadata; no overflow or page errors.
+- [x] Add to the main website: linked from the homepage footer, shared site menu/footer and the locations hub, then published to landing-craft-promptly.lovable.app.
 - [ ] Exact seven-card copy, eight FAQs and complete supplied schema: companion Noble_Dental_Care_Hayward_CA_Hub_Page.json is not attached.
+- [ ] Search indexing: page still sends noindex,follow until the supplied JSON lands and all seven destinations are verified.
 
 # All-on-X variation
 - [x] Build the separate page from all exact brief copy and schema, retaining original pages and branded chrome.
