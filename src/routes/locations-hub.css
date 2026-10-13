@@ -6,8 +6,8 @@
 .lh-section{padding:96px 0;position:relative}.lh-band{background:var(--lh-mist)}
 .lh-head{max-width:760px;margin:0 auto 48px;text-align:center}.lh-head p{color:var(--lh-muted)}
 .lh-reveal{opacity:1}
-.lh-sticker{display:inline-block;background:white;border:3px solid white;box-shadow:0 6px 16px color-mix(in oklab,var(--lh-navy) 14%,transparent);border-radius:999px;padding:6px 16px;font-size:.82rem;font-weight:600;color:var(--lh-teal);transform:rotate(-1.5deg);transition:transform .3s}
-.lh-sticker:hover{transform:rotate(0) translateY(-3px)}.lh-sticker-dark{background:color-mix(in oklab,white 12%,transparent);border-color:color-mix(in oklab,white 25%,transparent);color:var(--lh-gold)}
+.lh-sticker{display:inline-block;background:white;border:3px solid white;box-shadow:0 6px 16px color-mix(in oklab,var(--lh-navy) 14%,transparent);border-radius:999px;padding:6px 16px;font-size:.82rem;font-weight:600;color:var(--lh-teal)}
+.lh-sticker-dark{background:color-mix(in oklab,white 12%,transparent);border-color:color-mix(in oklab,white 25%,transparent);color:var(--lh-gold)}
 .lh-checks{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.55rem}.lh-checks li{display:flex;gap:.6rem;align-items:flex-start}.lh-checks svg{flex:none;width:20px;height:20px;padding:3px;border-radius:50%;background:var(--lh-teal);color:white;margin-top:2px}
 .lh-actions{display:flex;flex-wrap:wrap;gap:12px;margin:1.5rem 0}
 .lh-btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s;border:0;cursor:pointer;font-size:1rem}
@@ -27,7 +27,7 @@
 .lh-mark{position:relative;white-space:nowrap;display:inline-block}.lh-mark::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.04em;height:.22em;border-radius:6px;transform:scaleX(0) rotate(-1deg);transform-origin:left;animation:lh-draw .8s cubic-bezier(.22,1,.36,1) forwards;animation-delay:inherit;z-index:-1;opacity:.55}
 .lh-mark.lh-hayward::after{background:var(--lh-hayward)}.lh-mark.lh-newark::after{background:var(--lh-newark)}.lh-mark.lh-fremont::after{background:var(--lh-fremont)}
 @keyframes lh-draw{to{transform:scaleX(1) rotate(-1deg)}}
-.lh-switch{display:flex;gap:8px;flex-wrap:wrap}.lh-switch-pill{padding:8px 16px;border-radius:999px;background:white;font-weight:600;font-size:.9rem;text-decoration:none;border:2px solid currentColor;transition:transform .25s}.lh-switch-pill:hover{transform:translateY(-3px) rotate(-2deg)}
+.lh-switch{display:flex;gap:8px;flex-wrap:wrap}.lh-switch-pill{padding:8px 16px;border-radius:999px;background:white;font-weight:600;font-size:.9rem;text-decoration:none;border:2px solid currentColor}
 .lh-switch-pill.lh-hayward{color:var(--lh-hayward-text)}.lh-switch-pill.lh-newark{color:var(--lh-newark-text)}.lh-switch-pill.lh-fremont{color:var(--lh-fremont-text)}
 .lh-hero-map{background:var(--lh-glass);backdrop-filter:blur(10px);border:1px solid white;border-radius:28px;box-shadow:var(--lh-shadow);padding:12px}
 /* map */
@@ -108,8 +108,7 @@
 .lh-doc-photo{position:relative;padding:28px}.lh-doc-photo img{position:relative;width:100%;height:auto;border-radius:48% 52% 44% 56%/52% 44% 56% 48%;animation:lh-morph 12s ease-in-out infinite;box-shadow:var(--lh-shadow)}
 .lh-ring{position:absolute;inset:0;border:2px dashed var(--lh-gold);border-radius:50%;animation:lh-spin 40s linear infinite}
 @keyframes lh-spin{to{transform:rotate(360deg)}}@keyframes lh-morph{50%{border-radius:56% 44% 52% 48%/44% 56% 44% 56%}}
-.lh-orbit{position:absolute;background:white;border-radius:999px;padding:6px 14px;font-size:.82rem;font-weight:700;color:var(--lh-teal);box-shadow:var(--lh-shadow);animation:lh-float 5s ease-in-out infinite}.lh-o1{top:8%;left:0}.lh-o2{bottom:14%;right:-4%;animation-delay:-2s}.lh-o3{bottom:2%;left:8%;animation-delay:-3.5s}
-@keyframes lh-float{50%{transform:translateY(-10px)}}
+.lh-orbit{position:absolute;background:white;border-radius:999px;padding:6px 14px;font-size:.82rem;font-weight:700;color:var(--lh-teal);box-shadow:var(--lh-shadow)}.lh-o1{top:8%;left:0}.lh-o2{bottom:14%;right:-4%}.lh-o3{bottom:2%;left:8%}
 /* steps */
 .lh-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
 .lh-steps li{background:white;border-radius:24px;padding:24px;box-shadow:var(--lh-shadow);height:100%}.lh-steps p{color:var(--lh-muted);margin:0}
@@ -127,7 +126,7 @@
 .lh-form{background:white;color:var(--lh-ink);border-radius:28px;padding:32px;box-shadow:0 30px 70px color-mix(in oklab,var(--lh-navy) 30%,transparent);display:grid;gap:16px;position:relative;overflow:hidden}
 .lh-form label{display:grid;gap:6px;font-weight:600;font-size:.9rem}.lh-form input{min-height:48px;border-radius:14px;border:1.5px solid color-mix(in oklab,var(--lh-teal) 25%,transparent);padding:0 14px;font:inherit}
 .lh-form fieldset{border:0;padding:0;margin:0}.lh-form legend{font-weight:600;font-size:.9rem;margin-bottom:8px}
-.lh-chips{display:flex;flex-wrap:wrap;gap:8px}.lh-chip{min-height:44px;padding:0 16px;border-radius:999px;background:var(--lh-mist);border:2px solid transparent;font:600 .9rem Inter,sans-serif;color:var(--lh-navy);cursor:pointer;transition:transform .2s}.lh-chip:hover{transform:translateY(-2px)}.lh-chip-on{background:var(--lh-teal);color:white}
+.lh-chips{display:flex;flex-wrap:wrap;gap:8px}.lh-chip{min-height:44px;padding:0 16px;border-radius:999px;background:var(--lh-mist);border:2px solid transparent;font:600 .9rem Inter,sans-serif;color:var(--lh-navy);cursor:pointer}.lh-chip-on{background:var(--lh-teal);color:white}
 .lh-trap{position:absolute;left:-9999px;width:1px;height:1px}.lh-submit{justify-content:center;width:100%}.lh-err{color:oklch(.5 .17 25);font-size:.85rem;font-weight:500}.lh-fine{font-size:.78rem;color:var(--lh-muted);margin:0}
 .lh-success{text-align:center;place-items:center;min-height:320px}.lh-success-check{width:72px}.lh-success-check circle{fill:none;stroke:var(--lh-fremont);stroke-width:3}.lh-success-check path{fill:none;stroke:var(--lh-teal);stroke-width:4;stroke-linecap:round;stroke-dasharray:40;stroke-dashoffset:40;animation:lh-check .6s .2s forwards}@keyframes lh-check{to{stroke-dashoffset:0}}
 .lh-confetti i{position:absolute;top:40%;left:50%;width:8px;height:12px;border-radius:2px;background:var(--lh-hayward);animation:lh-burst 1.2s ease-out forwards;--a:calc(var(--i)*20deg)}.lh-confetti i:nth-child(3n){background:var(--lh-newark)}.lh-confetti i:nth-child(3n+1){background:var(--lh-fremont)}
