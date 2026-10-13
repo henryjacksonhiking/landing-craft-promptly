@@ -22,6 +22,8 @@ export const Route = createFileRoute("/")({
           "Looking for dental implants near Fremont, CA? Noble Dental Care offers advanced care with Yomi robotic technology for precise, comfortable results.",
       },
       { property: "og:title", content: "Dentist in Fremont, CA | Noble Dental Care" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content:

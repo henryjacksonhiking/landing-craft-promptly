@@ -79,7 +79,7 @@ export function CityCard({ city, title, body, gettingHere, bullets, page, button
   </article>;
 }
 
-export function LocalPageCard({ to, eyebrow, title, body }: { to: "/locations/hayward-ca/implant-supported-dentures" | "/all-on-x-dental-implants-hayward-ca" | "/replace-failing-teeth-hayward-ca" | "/replace-failing-teeth-hayward-ca-option-2" | "/"; eyebrow: string; title: string; body: string }) {
+export function LocalPageCard({ to, eyebrow, title, body }: { to: "/locations/hayward-ca/" | "/locations/hayward-ca/implant-supported-dentures" | "/all-on-x-dental-implants-hayward-ca" | "/replace-failing-teeth-hayward-ca" | "/replace-failing-teeth-hayward-ca-option-2" | "/"; eyebrow: string; title: string; body: string }) {
   return <Link to={to} className="lh-local-card"><span className="lh-local-eyebrow"><MapPin />{eyebrow}</span><strong>{title}</strong><span>{body}</span><span className="lh-local-go">Open page<ArrowRight /></span></Link>;
 }
 
