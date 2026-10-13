@@ -1,4 +1,11 @@
 # All-on-X variation
+# Hayward service-area hub
+- [ ] Create separate /locations/hayward-ca/ page with branded imagery, structured cards, accessible animation and working booking.
+- [ ] Connect it to the locations hub and add back links from existing Hayward pages.
+- [ ] Verify layouts, keyboard controls, form preview and metadata.
+- [ ] Exact seven-card copy, eight FAQs and complete supplied schema: companion Noble_Dental_Care_Hayward_CA_Hub_Page.json is not attached.
+
+# All-on-X variation
 - [x] Build the separate page from all exact brief copy and schema, retaining original pages and branded chrome.
 - [x] Add fit check, consultation preview with real booking fallback, FAQs, and restrained accessible motion.
 - [x] Verify desktop/mobile flows, reduced motion, resources, and errors.
