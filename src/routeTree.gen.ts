@@ -14,6 +14,7 @@ import { Route as AllOnXDentalImplantsHaywardCaRouteImport } from './routes/all-
 import { Route as DentistHaywardNewarkFremontRouteImport } from './routes/dentist-hayward-newark-fremont'
 import { Route as ReplaceFailingTeethHaywardCaRouteImport } from './routes/replace-failing-teeth-hayward-ca'
 import { Route as ReplaceFailingTeethHaywardCaOption2RouteImport } from './routes/replace-failing-teeth-hayward-ca-option-2'
+import { Route as LocationsHaywardCaIndexRouteImport } from './routes/locations.hayward-ca.index'
 import { Route as LocationsHaywardCaImplantSupportedDenturesRouteImport } from './routes/locations.hayward-ca.implant-supported-dentures'
 
 const IndexRoute = IndexRouteImport.update({
@@ -45,6 +46,11 @@ const ReplaceFailingTeethHaywardCaOption2Route =
     path: '/replace-failing-teeth-hayward-ca-option-2',
     getParentRoute: () => rootRouteImport,
   } as any)
+const LocationsHaywardCaIndexRoute = LocationsHaywardCaIndexRouteImport.update({
+  id: '/locations/hayward-ca/',
+  path: '/locations/hayward-ca/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsHaywardCaImplantSupportedDenturesRoute =
   LocationsHaywardCaImplantSupportedDenturesRouteImport.update({
     id: '/locations/hayward-ca/implant-supported-dentures',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
+  '/locations/hayward-ca/': typeof LocationsHaywardCaIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
+  '/locations/hayward-ca': typeof LocationsHaywardCaIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -76,6 +84,7 @@ export interface FileRoutesById {
   '/replace-failing-teeth-hayward-ca': typeof ReplaceFailingTeethHaywardCaRoute
   '/replace-failing-teeth-hayward-ca-option-2': typeof ReplaceFailingTeethHaywardCaOption2Route
   '/locations/hayward-ca/implant-supported-dentures': typeof LocationsHaywardCaImplantSupportedDenturesRoute
+  '/locations/hayward-ca/': typeof LocationsHaywardCaIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -86,6 +95,7 @@ export interface FileRouteTypes {
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
+    | '/locations/hayward-ca/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -94,6 +104,7 @@ export interface FileRouteTypes {
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
+    | '/locations/hayward-ca'
   id:
     | '__root__'
     | '/'
@@ -102,6 +113,7 @@ export interface FileRouteTypes {
     | '/replace-failing-teeth-hayward-ca'
     | '/replace-failing-teeth-hayward-ca-option-2'
     | '/locations/hayward-ca/implant-supported-dentures'
+    | '/locations/hayward-ca/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -111,6 +123,7 @@ export interface RootRouteChildren {
   ReplaceFailingTeethHaywardCaRoute: typeof ReplaceFailingTeethHaywardCaRoute
   ReplaceFailingTeethHaywardCaOption2Route: typeof ReplaceFailingTeethHaywardCaOption2Route
   LocationsHaywardCaImplantSupportedDenturesRoute: typeof LocationsHaywardCaImplantSupportedDenturesRoute
+  LocationsHaywardCaIndexRoute: typeof LocationsHaywardCaIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -150,6 +163,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReplaceFailingTeethHaywardCaOption2RouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/locations/hayward-ca/': {
+      id: '/locations/hayward-ca/'
+      path: '/locations/hayward-ca'
+      fullPath: '/locations/hayward-ca/'
+      preLoaderRoute: typeof LocationsHaywardCaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations/hayward-ca/implant-supported-dentures': {
       id: '/locations/hayward-ca/implant-supported-dentures'
       path: '/locations/hayward-ca/implant-supported-dentures'
@@ -169,6 +189,7 @@ const rootRouteChildren: RootRouteChildren = {
     ReplaceFailingTeethHaywardCaOption2Route,
   LocationsHaywardCaImplantSupportedDenturesRoute:
     LocationsHaywardCaImplantSupportedDenturesRoute,
+  LocationsHaywardCaIndexRoute: LocationsHaywardCaIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
